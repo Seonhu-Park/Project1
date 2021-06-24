@@ -1,0 +1,570 @@
+@charset 'uft-8';
+@import url('common.css');
+
+/* container ////////////////////////*/
+.container{
+    width:80%;
+    margin:0 auto;
+    padding:0;
+}
+.title{
+    color:white;
+    background-color: black;
+    display:inline-block;
+    width:fit-content;
+    height:40px;
+    padding:0 30px;
+    text-align: center;
+    font-size:25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.con_hd{
+    width:100%;
+    margin:100px 0 30px;
+    font-size:18px;
+}
+
+
+
+/* 헤더이미지 ///////////////////// */
+.bd_hd{
+    position: relative;
+    width:100%;
+    height:18vw;
+    overflow: hidden;
+    background-color: rgba(0,0,0);
+}
+.bd_hd figure{
+    background:url('../img/class3.jpg') 50% 50% no-repeat;
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+}
+.bd_hd span{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size:36px;
+    color:white;
+    letter-spacing: 20px;
+}
+
+
+/* 클래스문의 ///////////////////// */
+.con-1{
+    margin:50px auto 0;
+    position: relative;
+}
+.con-1 .qna{
+    background-color: #ebebeb;
+    border:1px solid #777;
+}
+.con-1 .qna ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con-1 img{
+    width: 100%;
+}
+.con-1 figure{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+.con-1 figure img{
+    width:50px;
+    height: 50px;
+    margin-right: 30px;
+}
+.con-1 figure figcaption{
+    font-size:36px;
+    font-weight: bold;
+}
+
+/* 클래스목록 ///////////////////////// */
+.con-2{
+    width:100%;
+}
+.con-2 ul{
+    position: relative;
+    height:40vh;
+    border:1px solid #a89968;
+    margin-top:35px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con-2 ul li{
+    width:50%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.con-2 ul li img{
+    height:40vh;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.con-2 ul li:nth-of-type(2){
+    height:40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.con-2 ul li p{
+    display: block;
+    margin:0 auto;
+    width:70%;
+    line-height: 1.5;
+}
+.con-2 ul li .cl_tt{
+    font-size:30px;
+    color:black;
+    font-weight: bold;
+}
+.con-2 ul li .cl_sbtt{
+    font-size:16px;
+    color:#777;
+    margin-bottom: 30px;
+}
+.con-2 ul li .cl_info{
+    font-size:20px;
+    color:black;
+}
+.con-2 ul .join{
+    position: absolute;
+    left:10px;
+    top:10px;
+    width:125px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fdd000;
+    font-size:18px;
+    font-weight: bold;
+    border:1px solid #fdd000;
+}
+.con-2 a ul:hover li:nth-of-type(1){
+}
+.con-2 a ul:hover .cl_tt{
+    color:#fdd000;
+}
+.con-2 a ul:hover .cl_in{
+    opacity: 1;
+}
+.con-2 a ul:hover li:nth-of-type(2){
+    width:80%;
+}
+.con-2 ul .cl_in{
+    opacity: 0;
+    position:absolute;
+    right:30px;
+    bottom:30px;
+    width:125px;
+    height: 50px;
+    background-color:rgba(0,0,0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#fdd000;
+    font-size:18px;
+    font-weight: bold;
+    border:1px solid #fdd000;
+}
+
+
+
+
+
+/* 반응형 모바일  ///////////////////////*/
+@media (min-width:360px) and (max-width:767px){
+    /* container ////////////////////////*/
+    .container{
+        /* OK */
+        width:90%;
+        margin:0 auto;
+        padding:0;
+    }
+
+
+
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/class3.jpg') 50% 50% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        /* OK */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+
+
+    /* 클래스문의 ///////////////////// */
+    .con-1{
+        /* OK */
+        margin:60px auto 0;
+        position: relative;
+    }
+    .con-1 .qna{
+        /* OK */
+        height: 15vw;
+        overflow: hidden;
+        background-color: #ebebeb;
+        border:1px solid #777;
+    }
+    .con-1 .qna ul{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .con-1 img{
+        /* OK */
+        height: 15vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .con-1 figure{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    .con-1 figure img{
+        /* OK */
+        width:30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .con-1 figure figcaption{
+        /* OK */
+        font-size:20px;
+        font-weight: bold;
+    }
+
+    /* 클래스목록 ///////////////////////// */
+    .con-2{
+        width:100%;
+    }
+    .con-2 ul{
+        position: relative;
+        height:35vh;
+        border:1px solid #a89968;
+        margin-top:35px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .con-2 ul li{
+        width:50%;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .con-2 ul li:nth-of-type(1){
+        width:40%;
+    }
+    .con-2 ul li:nth-of-type(2){
+        width:60%;
+    }
+    .con-2 ul li img{
+        height:35vh;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    .con-2 ul li:nth-of-type(2){
+        height:40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .con-2 ul li p{
+        display: block;
+        margin:0 auto;
+        width:80%;
+        line-height: 1.5;
+    }
+    .con-2 ul li .cl_tt{
+        /* OK */
+        font-size:16px;
+        color:black;
+        font-weight: bold;
+    }
+    .con-2 ul li .cl_sbtt{
+        /* OK */
+        font-size:0px;
+        color:#777;
+        margin-bottom: 30px;
+    }
+    .con-2 ul li .cl_info{
+        /* OK */
+        font-size:14px;
+        color:black;
+    }
+    .con-2 ul .join{
+        position: absolute;
+        left:10px;
+        top:10px;
+        width:80px;
+        height: 35px;
+        background-color: rgba(0,0,0,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#fdd000;
+        font-size:13px;
+        font-weight: bold;
+        border:1px solid #fdd000;
+    }
+    .con-2 a ul:hover li:nth-of-type(1){
+    }
+    .con-2 a ul:hover .cl_tt{
+        color:#000;
+    }
+    .con-2 a ul:hover .cl_in{
+        display: none;
+        opacity: 1;
+    }
+    .con-2 a ul:hover li:nth-of-type(2){
+        width:60%;
+    }
+    .con-2 ul .cl_in{
+        /* OK */
+        display: none;
+        opacity: 0;
+        position:absolute;
+        right:30px;
+        bottom:30px;
+        width:0px;
+        height: 0px;
+        background-color:rgba(0,0,0,0);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:rgba(0,0,0,0);
+        font-size:0px;
+        font-weight: bold;
+        border:0px solid #fdd000;
+    }
+}
+
+
+
+
+
+
+/* 반응형 //////////////////////////// */
+@media (min-width:768px) and (max-width:1200px){
+
+    /* container ////////////////////////*/
+    .container{
+        /* OK */
+        width:90%;
+        margin:0 auto;
+        padding:0;
+    }
+
+
+
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/class3.jpg') 50% 50% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        /* OK */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+
+
+    /* 클래스문의 ///////////////////// */
+    .con-1{
+        /* OK */
+        margin:60px auto 0;
+        position: relative;
+    }
+    .con-1 .qna{
+        /* OK */
+        height: 15vw;
+        overflow: hidden;
+        background-color: #ebebeb;
+        border:1px solid #777;
+    }
+    .con-1 .qna ul{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .con-1 img{
+        /* OK */
+        height: 15vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    .con-1 figure{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    .con-1 figure img{
+        /* OK */
+        width:30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .con-1 figure figcaption{
+        /* OK */
+        font-size:30px;
+        font-weight: bold;
+    }
+
+    /* 클래스목록 ///////////////////////// */
+    .con-2{
+        width:100%;
+    }
+    .con-2 ul{
+        position: relative;
+        height:35vh;
+        border:1px solid #a89968;
+        margin-top:35px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .con-2 ul li{
+        width:50%;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .con-2 ul li img{
+        height:35vh;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    .con-2 ul li:nth-of-type(2){
+        height:40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .con-2 ul li p{
+        display: block;
+        margin:0 auto;
+        width:80%;
+        line-height: 1.5;
+    }
+    .con-2 ul li .cl_tt{
+        /* OK */
+        font-size:16px;
+        color:black;
+        font-weight: bold;
+    }
+    .con-2 ul li .cl_sbtt{
+        /* OK */
+        font-size:12px;
+        color:#777;
+        margin-bottom: 30px;
+    }
+    .con-2 ul li .cl_info{
+        /* OK */
+        font-size:14px;
+        color:black;
+    }
+    .con-2 ul .join{
+        position: absolute;
+        left:10px;
+        top:10px;
+        width:100px;
+        height: 40px;
+        background-color: rgba(0,0,0,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#fdd000;
+        font-size:16px;
+        font-weight: bold;
+        border:1px solid #fdd000;
+    }
+    .con-2 a ul:hover li:nth-of-type(1){
+    }
+    .con-2 a ul:hover .cl_tt{
+        color:#fdd000;
+    }
+    .con-2 a ul:hover .cl_in{
+        opacity: 1;
+    }
+    .con-2 a ul:hover li:nth-of-type(2){
+        width:80%;
+    }
+    .con-2 ul .cl_in{
+        /* OK */
+        opacity: 0;
+        position:absolute;
+        right:30px;
+        bottom:30px;
+        width:100px;
+        height: 40px;
+        background-color:rgba(0,0,0);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:#fdd000;
+        font-size:16px;
+        font-weight: bold;
+        border:1px solid #fdd000;
+    }
+}

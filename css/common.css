@@ -1,0 +1,405 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family:'NotoSansKR', 'Ubuntu';
+    /*
+        rem (html 기준 곱하기)
+        em (상위요소 기준 곱하기)
+    */
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* link ////////////////////////*/
+header .hdmain a{
+    text-decoration: none;
+    color:white;
+}
+header .hdmain a:visited{
+    text-decoration: none;
+    color:white;
+}
+header .hdmain a:hover{
+    color:#fdd000;
+    transition: 0.5s;
+}
+
+
+
+/* body ////////////////////////*/
+body{
+    width:100%;
+    margin:0 auto;
+}
+
+
+
+/* ul ////////////////////////*/
+ul{
+    list-style:none;
+}
+
+
+
+/* img ////////////////////////*/
+img{
+    width:100%;
+    vertical-align: top;
+}
+
+
+
+/* header ////////////////////////*/
+header{
+    padding:0 10%;
+    height:65px;
+    background:url('../img/hdbg2.jpeg') fixed;
+    background-size: cover;
+    position:sticky;
+    top:0;
+    z-index: 10;
+    overflow: hidden;
+}
+header .hdmain{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .hdmain img{
+    vertical-align: middle;
+    width:240px;
+}
+header .hdmain ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:18px;
+}
+header .hdmain ul li{
+    padding:0 30px;
+}
+header .hdmain .bgmenu1{
+    position: relative;
+    right:0;
+    width:35px;
+    height:25px;
+    z-index: 10;
+}
+header .hdmain .bgmenu1 a{
+    width:35px;
+    height:25px;
+}
+header .hdmain .bgmenu1 a:hover + .bgmenu2{
+    display:flex;
+}
+header .hdmain .bgmenu1 > a span{
+    position: absolute;
+    right:0;
+    width:100%;
+    height:3px;
+    background-color: #fdd000;
+    z-index:2;
+}
+.bgmenu1 > a span:nth-child(1){
+    top:0%;
+}
+.bgmenu1 > a span:nth-child(2){
+    top:50%;
+    transform: translateY(-1.5px);
+}
+.bgmenu1 > a span:nth-child(3){
+    bottom:0%;
+}
+.bgmenu2{
+    display:none;
+    position:fixed;
+    right:0; top:65px;
+    width:50%;
+    height: 100%;
+    background:url('../img/hdbg2.jpeg') fixed;
+    background-size:cover;
+    font-size:30px;
+    flex-direction: column;
+    white-space: pre-line;
+    animation:bgmn 0.8s forwards;
+}
+@keyframes bgmn{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(0);}
+}
+.bgmenu2 .bgmenu2-1{
+    width:70%;
+    margin:50px auto;
+    font-weight: bold;
+    letter-spacing: 15px;
+}
+header .hdmain .bgmenu1 .bgmenu2 a{
+    text-decoration: none;
+    color:white;
+    line-height: 2.5;
+}
+header .hdmain .bgmenu1 .bgmenu2 a:visited{
+    text-decoration: none;
+    color:white;
+}
+header .hdmain .bgmenu1 .bgmenu2 a:hover{
+    color:#fdd000;
+}
+header .hdmain .hdsrc{
+    margin-right: 20px;
+}
+header .hdmain .hdsrc a{}
+header .hdmain .hdsrc a img{
+    width:35px;
+}
+.hdmn_r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* footer ////////////////////////*/
+footer{
+    position:relative;
+    padding:40px 10%;
+    color:#777;
+    font-size:16px;
+    background:url('../img/hdbg2.jpeg') fixed;
+    background-size: cover;
+    margin-top:150px;
+}
+
+footer div{
+    padding:10px;
+}
+
+footer .ftlogo{
+    position: absolute;
+    right:10%; bottom:50px;
+}
+
+footer .topbtn{
+    position:fixed;
+    right:5%;
+    bottom:50px;
+    width:50px;
+    height:50px;
+}
+
+
+
+/* 반응형 모바일 ////////////////////// */
+@media (min-width:360px) and (max-width:767px){
+    header{
+        /* OK */
+        padding:0 5%;
+        height:45px;
+        background:url('../img/hdbg2.jpeg') fixed;
+        background-size: cover;
+        position:sticky;
+        top:0;
+        z-index: 10;
+        overflow: hidden;
+    }
+    header .hdmain img{
+        /* OK */
+        vertical-align: middle;
+        width:150px;
+    }
+    header .hdmain ul{
+        /* OK */
+        display:none;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        font-size:20px;
+    }
+    header .hdmain .bgmenu1{
+        /* OK */
+        position: relative;
+        right:0;
+        width:25px;
+        height:15px;
+        z-index: 10;
+    }
+    header .hdmain .bgmenu1 a{
+        /* OK */
+        width:25px;
+        height:15px;
+    }
+    .bgmenu2{
+        /* OK */
+        display:none;
+        position:fixed;
+        right:0; top:45px;
+        width:100%;
+        height: 100%;
+        background:url('../img/hdbg2.jpeg') fixed;
+        background-size:cover;
+        font-size:20px;
+        flex-direction: column;
+        align-items: center;
+        white-space: pre-line;
+        animation:bgmn 0.8s forwards;
+    }
+    header .hdmain .hdsrc{
+        /* OK */
+        margin-right: 15px;
+    }
+    header .hdmain .hdsrc a img{
+        /* OK */
+        width:23px;
+    }
+
+
+    /* footer ////////////////////////*/
+    footer{
+        /* OK */
+        position:relative;
+        padding:20px 5%;
+        color:#777;
+        font-size:5px;
+        background:url('../img/hdbg2.jpeg') fixed;
+        background-size: cover;
+        margin-top:60px;
+    }
+
+    footer div{
+        /* OK */
+        padding:5px;
+    }
+
+    footer .ftlogo{
+        /* OK */
+        margin:20px auto 0 0;
+        position:relative;
+        right:0; bottom:0;
+        width:120px;
+    }
+
+    footer .topbtn{
+        /* OK */
+        display: none;
+        position:fixed;
+        right:5%;
+        bottom:5%;
+        width:40px;
+        height:40px;
+    }
+}
+
+
+
+
+
+
+
+/* 반응형 태블릿 ////////////////////////// */
+@media (min-width:768px) and (max-width:1200px){
+    header{
+        /* OK */
+        padding:0 5%;
+        height:45px;
+        background:url('../img/hdbg2.jpeg') fixed;
+        background-size: cover;
+        position:sticky;
+        top:0;
+        z-index: 10;
+        overflow: hidden;
+    }
+    header .hdmain img{
+        /* OK */
+        vertical-align: middle;
+        width:150px;
+    }
+    header .hdmain ul{
+        /* OK */
+        display:none;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        font-size:20px;
+    }
+    header .hdmain .bgmenu1{
+        /* OK */
+        position: relative;
+        right:0;
+        width:25px;
+        height:15px;
+        z-index: 10;
+    }
+    header .hdmain .bgmenu1 a{
+        /* OK */
+        width:25px;
+        height:15px;
+    }
+    .bgmenu2{
+        /* OK */
+        display:none;
+        position:fixed;
+        right:0; top:45px;
+        width:100%;
+        height: 100%;
+        background:url('../img/hdbg2.jpeg') fixed;
+        background-size:cover;
+        font-size:20px;
+        flex-direction: column;
+        align-items: center;
+        white-space: pre-line;
+        animation:bgmn 0.8s forwards;
+    }
+    header .hdmain .hdsrc{
+        /* OK */
+        margin-right: 15px;
+    }
+    header .hdmain .hdsrc a img{
+        /* OK */
+        width:23px;
+    }
+
+
+    /* footer ////////////////////////*/
+    footer{
+        /* OK */
+        position:relative;
+        padding:20px 5%;
+        color:#777;
+        font-size:5px;
+        background:url('../img/hdbg2.jpeg') fixed;
+        background-size: cover;
+        margin-top:60px;
+    }
+
+    footer div{
+        /* OK */
+        padding:5px;
+    }
+
+    footer .ftlogo{
+        /* OK */
+        margin:20px auto 0 0;
+        position:relative;
+        right:0; bottom:0;
+        width:120px;
+    }
+
+    footer .topbtn{
+        /* OK */
+        display: block;
+        position:fixed;
+        right:5%;
+        bottom:5%;
+        width:40px;
+        height:40px;
+    }
+}

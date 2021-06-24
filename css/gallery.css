@@ -1,0 +1,408 @@
+@charset 'uft-8';
+@import url('common.css');
+
+
+/* container ////////////////////////*/
+.container{
+    /* padding:0 10%; */
+    width:100%;
+    padding:0;
+}
+.con_hd{
+    width:100%;
+    margin:50px 0 30px;
+    font-size:18px;
+}
+
+
+
+/* 헤더이미지 ///////////////////// */
+.bd_hd{
+    position: relative;
+    width:100%;
+    height:18vw;
+    overflow: hidden;
+    background-color: rgba(0,0,0);
+}
+.bd_hd figure{
+    background:url('../img/img5.jpg') 50% 90% no-repeat;
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+}
+.bd_hd span{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size:36px;
+    color:white;
+    letter-spacing: 20px;
+}
+
+
+
+
+/* gallery ////////////////////////*/
+.gal{
+    width:80%;
+    margin:0 auto;
+}
+.gal .con_thm ul{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:30px;
+}
+.gal .con_thm ul li{
+    width:30%;
+    height: 25vw;
+    margin-right: 30px;
+    border:1px solid #a89968;
+    transition: 0.5s;
+}
+.gal .con_thm ul li figure .img_hv{
+    transition: 0.5s;
+}
+.gal .con_thm ul li figure .img_hv_ic{
+    transition: 0.5s;
+}
+.gal .con_thm ul li:hover figure img{
+    width:300%;
+}
+.gal .con_thm ul li:hover figure > .img_hv{
+    position:absolute;
+    left:0; top:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.gal .con_thm ul li:hover figure > .img_hv_ic span{
+    position:absolute;
+    left:50%; top:50%;
+    transform: translate(-50%, -50%);
+}
+.gal .con_thm ul li:hover figure > .img_hv_ic span:nth-child(1){
+    width:80px;
+    height:2px;
+    background-color: #fdd000;
+}
+.gal .con_thm ul li:hover figure > .img_hv_ic span:nth-child(2){
+    width:2px;
+    height:80px;
+    background-color: #fdd000;
+}
+.gal .con_thm ul li:hover .galtt{
+    color:#fdd000;
+}
+.gal .con_thm ul li:hover .galtxt{
+    color:#ddd;
+}
+.gal .con_thm ul li:last-child{
+    margin:0;
+}
+.gal .con_thm ul li figure{
+    position: relative;
+    height:55%;
+    overflow: hidden;
+    position: relative;
+    z-index: -5;
+}
+.gal .con_thm ul li figure img{
+    position: absolute;
+    width:200%;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    bottom:0%;
+    transition: 0.5s;
+}
+.figcaption{
+    padding:30px;
+    height: 45%;
+}
+.galtt{
+    font-size:18px;
+    color:#000;
+    margin-bottom:10px;
+    transition: 0.5s;
+}
+.galtxt{
+    font-size: 16px;
+    color:#777;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+/* 반응형 모바일 */
+@media (min-width:360px) and (max-width:767px){
+    /* container ////////////////////////*/
+    .container{
+        /* padding:0 10%; */
+        width:100%;
+        padding:0;
+    }
+    .con_hd{
+        /* OK */
+        width:100%;
+        margin:60px 0 30px;
+        font-size:18px;
+    }
+
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/img5.jpg') 50% 90% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        /* OK */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+
+
+    /* gallery ////////////////////////*/
+    .gal{
+        /* OK */
+        padding:0 5%;
+        width:90%;
+    }
+    .gal .con_thm ul li{
+        /* OK */
+        width:50%;
+        height: 20vw;
+        margin-right: 10px;
+        border:0px solid #a89968;
+        transition: 0.5s;
+    }
+    .gal .con_thm ul li:hover figure img{
+        width:200%;
+    }
+    .gal .con_thm ul li:hover figure > .img_hv{
+        position:absolute;
+        left:0; top:0;
+        width:100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0);
+    }
+    .gal .con_thm ul li:hover figure > .img_hv_ic span:nth-child(1){
+        /* OK */
+        display: none;
+        width:40px;
+        height:2px;
+        background-color: #fdd000;
+    }
+    .gal .con_thm ul li:hover figure > .img_hv_ic span:nth-child(2){
+        /* OK */
+        display: none;
+        width:2px;
+        height:40px;
+        background-color: #fdd000;
+    }
+    .gal .con_thm ul li figure{
+        /* OK */
+        position: relative;
+        height:100%;
+        overflow: hidden;
+        position: relative;
+        z-index: -5;
+        border:1px solid #a89968;
+    }
+    .figcaption{
+        /* OK */
+        display: none;
+        padding:5px;
+        height: 23%;
+    }
+    .figcaption .galtt{
+        font-size: 16px;
+    }
+    .figcaption .galtxt{
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* 반응형 ///////////////////// */
+@media (min-width:768px) and (max-width:1200px){
+
+    /* container ////////////////////////*/
+    .container{
+        /* padding:0 10%; */
+        width:100%;
+        padding:0;
+    }
+    .con_hd{
+        /* OK */
+        width:100%;
+        margin:60px 0 30px;
+        font-size:18px;
+    }
+
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/img5.jpg') 50% 90% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        /* OK */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+
+
+    /* gallery ////////////////////////*/
+    .gal{
+        /* OK */
+        padding:0 5%;
+        width:90%;
+    }
+    .gal .con_thm ul li{
+        /* OK */
+        width:50%;
+        height: 20vw;
+        margin-right: 10px;
+        border:0px solid #a89968;
+        transition: 0.5s;
+    }
+    .gal .con_thm ul li:hover figure > .img_hv_ic span:nth-child(1){
+        /* OK */
+        width:40px;
+        height:2px;
+        background-color: #fdd000;
+    }
+    .gal .con_thm ul li:hover figure > .img_hv_ic span:nth-child(2){
+        /* OK */
+        width:2px;
+        height:40px;
+        background-color: #fdd000;
+    }
+    .gal .con_thm ul li figure{
+        /* OK */
+        position: relative;
+        height:70%;
+        overflow: hidden;
+        position: relative;
+        z-index: -5;
+        border:1px solid #a89968;
+    }
+    .figcaption{
+        /* OK */
+        /* display: none; */
+        padding:5px;
+        height: 23%;
+    }
+    .figcaption .galtt{
+        font-size: 16px;
+    }
+    .figcaption .galtxt{
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width:1201px) and (max-width:1600px){
+    /* container ////////////////////////*/
+    .container{
+        /* padding:0 10%; */
+        width:100%;
+        padding:0;
+    }
+    .con_hd{
+        width:100%;
+        margin:50px 0 30px;
+        font-size:18px;
+    }
+
+
+
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/img5.jpg') 50% 90% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:36px;
+        color:white;
+        letter-spacing: 20px;
+    }
+
+
+
+
+    /* gallery ////////////////////////*/
+    .gal .con_thm ul li{
+        border:0px solid #a89968;
+    }
+    .gal .con_thm ul li figure{
+        position: relative;
+        height:70%;
+        overflow: hidden;
+        position: relative;
+        z-index: -5;
+        border:1px solid #a89968;
+    }
+    .figcaption{
+        padding:10px;
+        height: 30%;
+    }
+    .galtxt{
+        display: none;
+    }
+}

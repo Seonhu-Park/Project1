@@ -1,0 +1,255 @@
+@charset 'uft-8';
+@import url('common.css');
+
+
+/* container ////////////////////////*/
+.container{
+    /* padding:0 10%; */
+    width:100%;
+    padding:0;
+}
+.con_hd{
+    width:100%;
+    margin:100px 0 30px;
+    font-size:18px;
+}
+
+
+
+/* 헤더이미지 ///////////////////// */
+.bd_hd{
+    position: relative;
+    width:100%;
+    height:18vw;
+    overflow: hidden;
+    background-color: rgba(0,0,0);
+}
+.bd_hd figure{
+    background:url('../img/img5.jpg') 50% 90% no-repeat;
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+}
+.bd_hd span{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size:36px;
+    color:white;
+    letter-spacing: 20px;
+}
+
+
+
+
+/* gallery ////////////////////////*/
+.gal{
+    width:60%;
+    margin:0 auto;
+    position: relative;
+}
+
+/* 본문 */
+.gal_in{
+    margin:0 auto;
+    width:100%;
+}
+.gal_in article{
+    margin:10% auto;
+}
+.gal_in article h2{
+    font-size: 30px;
+    font-weight: bold;
+    width:fit-content;
+    margin:20px auto;
+}
+.gal_in article .in_date{
+    width:fit-content;
+    margin:0 auto;
+    color:#777;
+    font-size:20px;
+}
+.gal_in article img{
+    margin:40px 0;
+}
+.gal_in article .in_con{
+    line-height: 2;
+    color:#777;
+    font-size:20px;
+}
+
+.gl_fav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    right:5%;
+    bottom:10%; */
+    margin:20px 0;
+}
+.gl_fav span{
+    display: flex;
+    /* flex-direction: column; */
+    margin:5px;
+}
+.gl_fav a:nth-of-type(1) span{
+    background: url('../img/fav.png') no-repeat;
+    background-size: cover;
+    width:40px;
+    height:40px;
+}
+.gl_fav a:nth-of-type(2) span{
+    background:url('../img/share.png') no-repeat;
+    background-size: cover;
+    width:40px;
+    height:40px;
+}
+.line{
+    width:100%;
+    height: 1px;
+    background-color: #777;
+}
+
+
+
+
+
+
+/* 반응형 모바일 */
+@media (min-width:360px) and (max-width:767px){
+    /* container ////////////////////////*/
+    .container{
+        /* padding:0 10%; */
+        width:100%;
+        padding:0;
+    }
+    .con_hd{
+        /* OK */
+        width:100%;
+        margin:60px 0 30px;
+        font-size:18px;
+    }
+
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/img5.jpg') 50% 90% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        /* OK */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+
+
+    /* gallery ////////////////////////*/
+    .gal{
+        /* OK */
+        padding:0 5%;
+        width:80%;
+    }
+    
+    /* 본문 */
+    .gal_in{
+        margin:0 auto;
+        width:100%;
+    }
+    .gal_in article h2{
+        font-size: 23px;
+    }
+    .gal_in article .in_date{
+        font-size:16px;
+    }
+    .gal_in article .in_con{
+        font-size:16px;
+    }
+    
+}
+
+
+
+
+
+
+/* 반응형 ///////////////////// */
+@media (min-width:768px) and (max-width:1200px){
+
+    /* container ////////////////////////*/
+    .container{
+        /* padding:0 10%; */
+        width:100%;
+        padding:0;
+    }
+    .con_hd{
+        /* OK */
+        width:100%;
+        margin:60px 0 30px;
+        font-size:18px;
+    }
+
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/img5.jpg') 50% 90% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        /* OK */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+
+
+    /* gallery ////////////////////////*/
+    .gal{
+        /* OK */
+        width:80%;
+        margin:0 auto;
+    }
+
+    /* 본문 */
+    .gal_in{
+        margin:0 auto;
+        width:100%;
+    }
+    .gal_in article h2{
+        font-size: 25px;
+    }
+    .gal_in article .in_date{
+        font-size:18px;
+    }
+    .gal_in article .in_con{
+        font-size:18px;
+    }
+}

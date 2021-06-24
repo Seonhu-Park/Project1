@@ -1,0 +1,438 @@
+@charset 'uft-8';
+@import url('common.css');
+
+/* container ////////////////////////*/
+.container{
+    width:80%;
+    margin:0 auto;
+    padding:0;
+}
+.title{
+    color:white;
+    background-color: black;
+    display:inline-block;
+    width:fit-content;
+    height:40px;
+    padding:0 30px;
+    text-align: center;
+    font-size:25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.con_hd{
+    width:100%;
+    margin:100px 0 30px;
+    font-size:18px;
+}
+
+
+
+/* 헤더이미지 ///////////////////// */
+.bd_hd{
+    position: relative;
+    width:100%;
+    height:18vw;
+    overflow: hidden;
+    background-color: rgba(0,0,0);
+}
+.bd_hd figure{
+    background:url('../img/gl1.jpg') 50% 55% no-repeat;
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+}
+.bd_hd span{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size:36px;
+    color:white;
+    letter-spacing: 20px;
+}
+
+
+.con-1{
+    margin:100px auto 0;
+}
+.con-1 img{
+    width:100%;
+    border:1px solid #777;
+    vertical-align: top;
+    font-size:0;
+    transition: 0.5s;
+}
+.con-1 h2{
+    font-size: 26px;
+    font-weight: 900;
+    transition: 0.5s;
+    padding:30px 0 10px;
+    margin: 10px 0 0;
+    line-height: 36px;
+    padding-left:5px;
+}
+.con-1 p{
+    font-size:18px;
+    padding-left:5px;
+}
+.con-1 a{
+    color:#000;
+}
+.con-1 a:visited{
+    color:#000;
+}
+.con-1 ul{}
+.con-1 ul li{
+    height:40vw;
+    margin-right:20px;
+    /* margin-bottom:100px; */
+}
+.con-1 ul li:last-child{
+    margin-right:0;
+}
+.con-1 .list1{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con-1 .list1 li{
+    width:30%;
+}
+
+.con-1 .list2{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con-1 .list2 li{
+    width:30%;
+}
+.con-1 figure{
+    position: relative;
+    background-color: black;
+}
+.con-1 li:hover img{
+    opacity: 0.3;
+}
+.con-1 li:hover figcaption{
+    display: flex;
+}
+.con-1 li:hover h2{
+    color:#fdd000;
+    font-size:28px;
+}
+.con-1 figcaption{
+    display: none;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/exh_nxt.png) no-repeat;
+    background-size: cover;
+    width:150px;
+    height:150px;
+    animation:a1 1s infinite;
+}
+@keyframes a1{
+    0%{}
+    50%{transform: translateY(-60%) translateX(-50%);}
+    100%{}
+}
+
+footer{
+    margin-top:20px;
+}
+
+
+
+
+
+
+/* 반응형 모바일  ///////////////////////*/
+@media (min-width:360px) and (max-width:767px){
+    /* container ////////////////////////*/
+    .container{
+        /* OK */
+        width:90%;
+        margin:0 auto;
+        padding:0;
+    }
+
+
+
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/gl1.jpg') 50% 55% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        /* OK */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+
+
+    .con-1{
+        /* OK */
+        margin:60px auto 0;
+    }
+    .con-1 img{
+        width:100%;
+        border:1px solid #777;
+        vertical-align: top;
+        font-size:0;
+        transition: 0.5s;
+    }
+    .con-1 h2{
+        /* OK */
+        font-size: 14px;
+        font-weight: 900;
+        transition: 0.5s;
+        padding:10px 0 5px 5px;
+        margin: 10px 0 0;
+        line-height: 20px;
+    }
+    .con-1 p{
+        /* OK */
+        font-size:0px;
+        padding-left:5px;
+    }
+    .con-1 p:nth-of-type(2){
+        /* OK */
+        display: none;
+    }
+    .con-1 a{
+        color:#000;
+    }
+    .con-1 a:visited{
+        color:#000;
+    }
+    .con-1 ul{}
+    .con-1 ul li{
+        height:50vw;
+        margin-right:20px;
+        /* margin-bottom:100px; */
+    }
+    .con-1 ul li:last-child{
+        margin-right:0;
+    }
+    .con-1 .list1{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .con-1 .list1 li{
+        width:30%;
+    }
+
+    .con-1 .list2{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .con-1 .list2 li{
+        width:30%;
+    }
+    .con-1 figure{
+        position: relative;
+        background-color: black;
+    }
+    .con-1 li:hover img{
+        opacity: 0.3;
+    }
+    .con-1 li:hover figcaption{
+        display: none;
+    }
+    .con-1 li:hover h2{
+        /* OK */
+        color:#000;
+        font-size:14px;
+    }
+    .con-1 figure{
+        position: relative;
+        background-color:rgba(0,0,0,0);
+    }
+    .con-1 li:hover img{
+        opacity: 1;
+    }
+    .con-1 figcaption{
+        display: none;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        background: url(../img/exh_nxt.png) no-repeat;
+        background-size: cover;
+        width:80px;
+        height:80px;
+        animation:none;
+    }
+    @keyframes a1{
+        0%{}
+        50%{transform: translateY(-60%) translateX(-50%);}
+        100%{}
+    }
+}
+
+
+
+
+
+
+/* 반응형 //////////////////////////// */
+@media (min-width:768px) and (max-width:1200px){
+    
+    /* container ////////////////////////*/
+    .container{
+        /* OK */
+        width:90%;
+        margin:0 auto;
+        padding:0;
+    }
+
+
+
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/gl1.jpg') 50% 55% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        /* OK */
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+
+
+    .con-1{
+        /* OK */
+        margin:60px auto 0;
+    }
+    .con-1 img{
+        width:100%;
+        border:1px solid #777;
+        vertical-align: top;
+        font-size:0;
+        transition: 0.5s;
+    }
+    .con-1 h2{
+        /* OK */
+        font-size: 18px;
+        transition: 0.5s;
+        padding:10px 0 5px 5px;
+        margin: 10px 0 0;
+        line-height: 25px;
+    }
+    .con-1 p{
+        /* OK */
+        font-size:12px;
+        padding-left:5px;
+    }
+    .con-1 p:nth-of-type(2){
+        /* OK */
+        display: none;
+    }
+    .con-1 a{
+        color:#000;
+    }
+    .con-1 a:visited{
+        color:#000;
+    }
+    .con-1 ul{}
+    .con-1 ul li{
+        height:50vw;
+        margin-right:20px;
+        /* margin-bottom:100px; */
+    }
+    .con-1 ul li:last-child{
+        margin-right:0;
+    }
+    .con-1 .list1{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .con-1 .list1 li{
+        width:30%;
+    }
+
+    .con-1 .list2{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .con-1 .list2 li{
+        width:30%;
+    }
+    .con-1 figure{
+        position: relative;
+        background-color: black;
+    }
+    .con-1 li:hover img{
+        opacity: 0.3;
+    }
+    .con-1 li:hover figcaption{
+        display: flex;
+    }
+    .con-1 li:hover h2{
+        /* OK */
+        color:#fdd000;
+        font-size:19px;
+    }
+    .con-1 figcaption{
+        display: none;
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        background: url(../img/exh_nxt.png) no-repeat;
+        background-size: cover;
+        width:80px;
+        height:80px;
+        animation:a1 1s infinite;
+    }
+    @keyframes a1{
+        0%{}
+        50%{transform: translateY(-60%) translateX(-50%);}
+        100%{}
+    }
+}
