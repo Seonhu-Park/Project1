@@ -1,0 +1,93 @@
+@charset 'uft-8';
+@import url('common.css');
+
+/* 헤더이미지 ///////////////////// */
+.bd_hd{
+    position: relative;
+    width:100%;
+    height:18vw;
+    overflow: hidden;
+    background-color: rgba(0,0,0);
+}
+.bd_hd figure{
+    background:url('../img/img7.jpeg') 50% 50% no-repeat;
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+}
+.bd_hd span{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size:36px;
+    color:white;
+    letter-spacing: 20px;
+}
+
+
+
+
+
+
+
+
+/* 반응형 모바일  ///////////////////////*/
+@media (min-width:360px) and (max-width:767px){
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/img7.jpeg') 50% 50% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+}
+
+
+
+
+/* 반응형 //////////////////////////// */
+@media (min-width:768px) and (max-width:1200px){
+    /* 헤더이미지 ///////////////////// */
+    .bd_hd{
+        position: relative;
+        width:100%;
+        height:18vw;
+        overflow: hidden;
+        background-color: rgba(0,0,0);
+    }
+    .bd_hd figure{
+        background:url('../img/img7.jpeg') 50% 50% no-repeat;
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        opacity: 0.5;
+    }
+    .bd_hd span{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        font-size:20px;
+        color:white;
+        letter-spacing: 20px;
+    }
+}

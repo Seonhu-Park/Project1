@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DESIGN HOUSE M+</title>
-    <link href="css/gallery-2.css" rel="stylesheet">
+    <link href="css/search2.css" rel="stylesheet">
 </head>
 <body>
 
@@ -44,32 +44,30 @@
             </div>
             </div>
     </header>
+    
 
     <!-- 헤더이미지 /////////////////////////// -->
     <article class="bd_hd">
         <figure></figure>
-        <span><b>GALLERY</b></span>
+        <span><b>SEARCH</b></span>
     </article>
 
+    <!-- 콘테이너 //////////////////////////////// -->
     <div class="container">
-        <div class="gal">
-            <div class="gal_in">
-                <article>
-                    <h2>"AI는 바실리 칸딘스키가 들은 음악을 알고 있다"</h2>
-                    <p class="in_date">2021-03-16</p>
-                    <div class="gl_fav">
-                        <a href="#"><span></span></a>
-                        <a href="#"><span></span></a>
-                    </div>
-                    <div class="line"></div>
-                    <img src="img/gl3.jpg">
-                    <p class="in_con">
-                        구글 아트앤컬처가 바실리 칸딘스키의 추상 회화를 음악으로 변환하는 프로그램을 공개했다. 프랑스 조르주 퐁피두 국립예술문화센터와 협력한 이 프로젝트는 칸딘스키가 남긴 메모를 인공지능이 분석해 당시 그가 음악을 어떻게 이해했는지 학습하는 과정으로 만들어졌다. 트랜스포머 신경망 기술을 적용해 칸딘스키가 1025년 그의 대표 작품 '노랑, 빨강, 파랑'을 그렸을 때 들었을 법한 음악을 시뮬레이션한 것이 특징이다. AI는 빨간색을 바이올린, 노란색을 트럼펫, 파란색을 오르간 소리로 해석했다. 아트앤컬처 웹사이트에서는 칸딘스키의 신경망 분석을 토대로 도출한 컬러와 소리의 상관관계를 직접 들어볼 수 있다.<br>
-                        artsandculture.google.com
-                    </p>
-                </article>
+            <div class="con-1">
+                <form class="form">
+                    <input type="search" id="src" placeholder="검색어를 입력해주세요.">
+                    <span class="src_btn">
+                        <a href="search2.html"><input type="button" id="srcsm"></a>
+                    </span>
+                </form>
+                <figure class="src_rs">
+                    <img src="img/search.png">
+                    <figcaption>
+                        <b>0개</b> 의 검색결과가 있습니다.
+                    </figcaption>
+                </figure>
             </div>
-        </div>
     </div>
 
     <!-- 푸터 //////////////////////////////// -->

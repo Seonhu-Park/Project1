@@ -2,14 +2,40 @@
 @import url('common.css');
 
 /* header banner //////////////////*/
-.hd_img figure img{
-    width:100%;
-    background-color:#777;
-}
 .hd_img{
+    margin:0 auto;
     width:100%;
     position: relative;
+    background-color: black;
 }
+.hd_img .hd_frame{
+    margin:0 auto;
+    width:100%;
+    height: 26vw;
+    margin:0 auto;
+    overflow: hidden;
+}
+.hd_img .hd_frame figure{
+    margin:0 auto;
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    animation: hd_frame 15s infinite;
+}
+@keyframes hd_frame{
+    0%{transform: translateX(0%);}
+    25%{transform: translateX(-100%);}
+    50%{transform: translateX(-200%);}
+    75%{transform: translateX(-300%);}
+    100%{transform: translateX(-400%);}
+}
+.hd_img .hd_frame figure a img{
+    width:100%;
+    object-position: bottom;
+    background-color:#777;
+    opacity: 0.7;
+}
+
 .nxt_btn{
     width:100%;
     position: absolute;
@@ -54,8 +80,8 @@
 }
 .hd_more{
     position: absolute;
-    right:320px;
-    bottom:105px;
+    right:10%;
+    bottom:25px;
 }
 .hd_more a{
     color:white;
@@ -92,13 +118,13 @@ header .hdmain a:hover{
 }
 .title{
     color:white;
-    background-color: black;
+    background-color: none;
     display:inline-block;
     width:fit-content;
     height:40px;
-    padding:0 30px;
+    padding:0;
     text-align: center;
-    font-size:25px;
+    font-size:36px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -109,23 +135,25 @@ header .hdmain a:hover{
     height: 40px;
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin:130px 0 30px;
 }
 .con_hd > a{
     font-size:18px;
-    color:#777;
+    color:#a89968;
 }
 .con_hd > a:hover{
     color:#3b361c
 }
 .con_hd .title > a{
     text-decoration: none;
-    color:white;
+    color:#a89968;
+    font-style: italic;
+    font-weight: 900;
 }
 header .hdmain > a:visited{
     text-decoration: none;
-    color:white;
+    color:#a89968;
 }
 
 
@@ -264,7 +292,7 @@ header .hdmain > a:visited{
     display:flex;
 }
 .cl_all:hover{
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(255,255,255,0.5);
 }
 .cl_all{
     position: relative;
@@ -280,7 +308,7 @@ header .hdmain > a:visited{
     position:absolute;
     left:50%; top:50%;
     transform: translate(-50%, -50%);
-    background-color:rgba(0,0,0,0.7);
+    background-color:rgba(0,0,0,0.8);
     border-radius: 100px;
     border:1px solid #fdd000;
     width:150px;
@@ -290,7 +318,7 @@ header .hdmain > a:visited{
     align-items: center;
     text-align: center;
     font-size:30px;
-    color:white;
+    color:#fdd000;
     font-weight: bold;
     margin:0 auto;
     animation:cl 1s infinite;
@@ -382,26 +410,32 @@ header .hdmain > a:visited{
     margin-right:20px;
     box-shadow:0px 0px 20px rgba(0,0,0,0.6);
 }
-.exh_thm .thm_2:hover article{
-    display:block;
+.exh_thm .thm_2:hover article h2{
+    /* display:block; */
+    color:#fdd000;
+    /* transition:0.3s; */
+    /* font-size: 31px; */
+    letter-spacing: 5px;
 }
 .exh_thm .thm_2 article{
-    display:none;
     position: absolute;
     left:0;
     bottom:0;
     background-color: rgba(0,0,0,0.7);
     padding:30px;
     width:100%;
-    animation:a1 0.5s forwards;
+    /* animation:a1 0.5s forwards; */
 }
-@keyframes a1{
+/* @keyframes a1{
     from{bottom:-100%;}
     to{bottom:0;}
-}
+} */
 .exh_thm .thm_2 article h2{
     color:white;
     font-size:30px;
+    line-height: 40px;
+    margin-bottom:10px;
+    transition:0.3s;
 }
 .exh_thm .thm_2 article span{
     color:white;
@@ -530,18 +564,38 @@ header .hdmain > a:visited{
 /* 반응형 모바일 */
 @media (min-width:360px) and (max-width:767px){
    /* header banner //////////////////*/
-   .con_hd > a:hover{
-    color:#777;
-}
-   .hd_img figure{
-    /* OK */
-    height:40vw;
-}
-    .hd_img figure img{
-        /* OK */
-        height:100%;
-        object-fit: cover;
+    .hd_img{
+        margin:0 auto;
+        width:100%;
+        position: relative;
+        background-color: black;
+    }
+    .hd_img .hd_frame{
+        margin:0 auto;
+        width:100%;
+        height: 40vw;
+        margin:0 auto;
+        overflow: hidden;
+    }
+    .hd_img .hd_frame figure{
+        margin:0 auto;
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+        animation: hd_frame 15s infinite;
+    }
+    @keyframes hd_frame{
+        0%{transform: translateX(0%);}
+        25%{transform: translateX(-100%);}
+        50%{transform: translateX(-200%);}
+        75%{transform: translateX(-300%);}
+        100%{transform: translateX(-400%);}
+    }
+    .hd_img .hd_frame figure a img{
+        width:100%;
+        object-position: bottom;
         background-color:#777;
+        opacity: 0.7;
     }
     .nxt_btn{
         /* OK */
@@ -626,7 +680,7 @@ header .hdmain > a:visited{
         /* OK */
         display: none;
         font-size:14px;
-        color:#777;
+        color:#a89968;
     }
     .con_hd .title a{
         text-decoration: none;
@@ -818,6 +872,9 @@ header .hdmain > a:visited{
         justify-content: center;
         align-items: center;
     }
+    .cl .cl_num span:last-child{
+        display:none;
+    }
 
 
     /* exhibition ////////////////////////// */
@@ -851,6 +908,10 @@ header .hdmain > a:visited{
         /* OK */
         display:block;
     }
+    .exh_thm .thm_2:hover article h2{
+        letter-spacing: 0;
+        color:white;
+    }
     .exh_thm .thm_2 article{
         /* OK */
         display:block;
@@ -873,6 +934,8 @@ header .hdmain > a:visited{
         margin:0 auto;
         color:white;
         font-size:16px;
+        margin-bottom: 0px;
+        line-height: 1;
     }
     .exh_thm .thm_2 article span{
         /* OK */
@@ -957,7 +1020,7 @@ header .hdmain > a:visited{
         /* display: none; */
         margin:15px auto 0;
         color:white;
-        font-size:10px;
+        font-size:13px;
         text-align: center;
         width:fit-content;
         height:fit-content;
@@ -967,6 +1030,10 @@ header .hdmain > a:visited{
         border-radius: 50px;
         justify-content: center;
         align-items: center;
+        line-height: 15px;
+    }
+    .lb_all .lb_list .mgz article:nth-of-type(2) p{
+        font-size:11px;
     }
     .fav{
         /* OK */
@@ -999,16 +1066,40 @@ header .hdmain > a:visited{
 @media (min-width:768px) and (max-width:1200px){
 
     /* header banner //////////////////*/
-    .hd_img figure{
-        /* OK */
-        height:40vw;
+    .hd_img{
+        margin:0 auto;
+        width:100%;
+        position: relative;
+        background-color: black;
     }
-    .hd_img figure img{
-        /* OK */
-        height:100%;
-        object-fit: cover;
+    .hd_img .hd_frame{
+        margin:0 auto;
+        width:100%;
+        height: 33vw;
+        margin:0 auto;
+        overflow: hidden;
+    }
+    .hd_img .hd_frame figure{
+        margin:0 auto;
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+        animation: hd_frame 15s infinite;
+    }
+    @keyframes hd_frame{
+        0%{transform: translateX(0%);}
+        25%{transform: translateX(-100%);}
+        50%{transform: translateX(-200%);}
+        75%{transform: translateX(-300%);}
+        100%{transform: translateX(-400%);}
+    }
+    .hd_img .hd_frame figure a img{
+        width:100%;
+        object-position: bottom;
         background-color:#777;
+        opacity: 0.7;
     }
+
     .nxt_btn > .next{
         padding:0 5%;
     }
@@ -1085,13 +1176,13 @@ header .hdmain > a:visited{
         height: 40px;
         display:flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         margin:50px 0 20px;
     }
     .con_hd > a{
         /* OK */
         font-size:14px;
-        color:#777;
+        color:#a89968;
     }
     .con_hd .title a{
         text-decoration: none;
@@ -1220,7 +1311,7 @@ header .hdmain > a:visited{
         position:absolute;
         left:50%; top:50%;
         transform: translate(-50%, -50%);
-        background-color:rgba(0,0,0,0.7);
+        background-color:rgba(0,0,0,0.8);
         border-radius: 100px;
         border:1px solid #fdd000;
         width:100px;
@@ -1230,7 +1321,7 @@ header .hdmain > a:visited{
         align-items: center;
         text-align: center;
         font-size:20px;
-        color:white;
+        color:#fdd000;
         font-weight: bold;
         margin:0 auto;
         animation:cl 1s infinite;
@@ -1402,6 +1493,42 @@ header .hdmain > a:visited{
 
 /* 반응형 중간화면 */
 @media (min-width:1201px) and (max-width:1600px){
+
+    /* header banner //////////////////*/
+    .hd_img{
+        margin:0 auto;
+        width:100%;
+        position: relative;
+        background-color: black;
+    }
+    .hd_img .hd_frame{
+        margin:0 auto;
+        width:100%;
+        height: 26vw;
+        margin:0 auto;
+        overflow: hidden;
+    }
+    .hd_img .hd_frame figure{
+        margin:0 auto;
+        width:100%;
+        display: flex;
+        justify-content: flex-start;
+        animation: hd_frame 15s infinite;
+    }
+    @keyframes hd_frame{
+        0%{transform: translateX(0%);}
+        25%{transform: translateX(-100%);}
+        50%{transform: translateX(-200%);}
+        75%{transform: translateX(-300%);}
+        100%{transform: translateX(-400%);}
+    }
+    .hd_img .hd_frame figure a img{
+        width:100%;
+        object-position: bottom;
+        background-color:#777;
+        opacity: 0.7;
+    }
+
     /* gallery ////////////////////////*/
     .gal .con_thm ul li{
         border:0px solid #a89968;
@@ -1439,4 +1566,43 @@ header .hdmain > a:visited{
     .lb_all .lb_list .mgz article p{
         font-size: 12px;
     }
+}
+
+
+/* 반응형 큰화면 */
+@media (min-width:1601px) and (max-width:1920px){
+        /* header banner //////////////////*/
+        .hd_img{
+            margin:0 auto;
+            width:100%;
+            position: relative;
+            background-color: black;
+        }
+        .hd_img .hd_frame{
+            margin:0 auto;
+            width:100%;
+            height: 26vw;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        .hd_img .hd_frame figure{
+            margin:0 auto;
+            width:100%;
+            display: flex;
+            justify-content: flex-start;
+            animation: hd_frame 15s infinite;
+        }
+        @keyframes hd_frame{
+            0%{transform: translateX(0%);}
+            25%{transform: translateX(-100%);}
+            50%{transform: translateX(-200%);}
+            75%{transform: translateX(-300%);}
+            100%{transform: translateX(-400%);}
+        }
+        .hd_img .hd_frame figure a img{
+            width:100%;
+            object-position: bottom;
+            background-color:#777;
+            opacity: 0.7;
+        }
 }

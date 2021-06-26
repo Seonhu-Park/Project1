@@ -103,16 +103,29 @@ header .hdmain .bgmenu1 > a span{
     position: absolute;
     right:0;
     width:100%;
-    height:3px;
+    height:4px;
     background-color: #fdd000;
+    border-radius: 5px;
     z-index:2;
 }
+header .hdmain .bgmenu1:hover a span:nth-child(1){
+    transform: rotate(45deg);
+    top:50%;
+}
+header .hdmain .bgmenu1:hover a span:nth-child(2){
+    display: none;
+}
+header .hdmain .bgmenu1:hover a span:nth-child(3){
+    transform: rotate(-45deg);
+    top:50%;
+}
+
 .bgmenu1 > a span:nth-child(1){
     top:0%;
 }
 .bgmenu1 > a span:nth-child(2){
     top:50%;
-    transform: translateY(-1.5px);
+    transform: translateY(-2px);
 }
 .bgmenu1 > a span:nth-child(3){
     bottom:0%;
@@ -129,6 +142,7 @@ header .hdmain .bgmenu1 > a span{
     flex-direction: column;
     white-space: pre-line;
     animation:bgmn 0.8s forwards;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 @keyframes bgmn{
     0%{transform: translateX(100%);}
@@ -152,12 +166,12 @@ header .hdmain .bgmenu1 .bgmenu2 a:visited{
 header .hdmain .bgmenu1 .bgmenu2 a:hover{
     color:#fdd000;
 }
-header .hdmain .hdsrc{
+header .hdmain .hdsrc:nth-of-type(1){
     margin-right: 20px;
 }
 header .hdmain .hdsrc a{}
 header .hdmain .hdsrc a img{
-    width:35px;
+    width:34px;
 }
 .hdmn_r{
     display: flex;
@@ -229,7 +243,7 @@ footer .topbtn{
         position: relative;
         right:0;
         width:25px;
-        height:15px;
+        height:18px;
         z-index: 10;
     }
     header .hdmain .bgmenu1 a{
@@ -259,6 +273,25 @@ footer .topbtn{
     header .hdmain .hdsrc a img{
         /* OK */
         width:23px;
+    }
+    header .hdmain .bgmenu1 > a span{
+        position: absolute;
+        right:0;
+        width:100%;
+        height:3px;
+        background-color: #fdd000;
+        border-radius: 5px;
+        z-index:2;
+    }
+    .bgmenu1 > a span:nth-child(1){
+        top:0%;
+    }
+    .bgmenu1 > a span:nth-child(2){
+        top:50%;
+        transform: translateY(-1.5px);
+    }
+    .bgmenu1 > a span:nth-child(3){
+        bottom:0%;
     }
 
 
@@ -335,7 +368,7 @@ footer .topbtn{
         position: relative;
         right:0;
         width:25px;
-        height:15px;
+        height:18px;
         z-index: 10;
     }
     header .hdmain .bgmenu1 a{
@@ -348,9 +381,10 @@ footer .topbtn{
         display:none;
         position:fixed;
         right:0; top:45px;
-        width:100%;
+        width:70%;
         height: 100%;
         background:url('../img/hdbg2.jpeg') fixed;
+        box-shadow: 0 0 20px rgba(0,0,0,0.8);
         background-size:cover;
         font-size:20px;
         flex-direction: column;
@@ -365,6 +399,25 @@ footer .topbtn{
     header .hdmain .hdsrc a img{
         /* OK */
         width:23px;
+    }
+    header .hdmain .bgmenu1 > a span{
+        position: absolute;
+        right:0;
+        width:100%;
+        height:3px;
+        background-color: #fdd000;
+        border-radius: 5px;
+        z-index:2;
+    }
+    .bgmenu1 > a span:nth-child(1){
+        top:0%;
+    }
+    .bgmenu1 > a span:nth-child(2){
+        top:50%;
+        transform: translateY(-1.5px);
+    }
+    .bgmenu1 > a span:nth-child(3){
+        bottom:0%;
     }
 
 
@@ -402,4 +455,17 @@ footer .topbtn{
         width:40px;
         height:40px;
     }
+}
+
+
+
+@media (min-width:1201px) and (max-width:1920px){
+    .bgmenu1{
+        display: none;
+    }
+    .hdsrc:nth-of-type(2){
+        margin-right:0;
+        padding-right: 0;
+    }
+
 }

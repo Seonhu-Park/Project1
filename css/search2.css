@@ -108,12 +108,12 @@
     text-align: center;
     font-size: 36px;
 }
-.con-1 .form .src_btn a{
+.con-1 .form a{
     margin:0;
     padding:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    vertical-align: top;
+    font-size: 0;
 }
 
 
@@ -229,13 +229,6 @@
         text-align: center;
         font-size: 25px;
     }
-    .con-1 .form .src_btn a{
-        margin:0;
-        padding:0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 
@@ -348,12 +341,5 @@
         width:fit-content;
         text-align: center;
         font-size: 30px;
-    }
-    .con-1 .form .src_btn a{
-        margin:0;
-        padding:0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
