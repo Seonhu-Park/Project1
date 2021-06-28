@@ -35,6 +35,16 @@
     background-color:#777;
     opacity: 0.7;
 }
+.hd_title{
+    position: absolute;
+    left:15%;
+    top:15%;
+    background-color: rgba(0,0,0,0.7);
+    color:white;
+    padding:20px 60px 20px 20px;
+    font-size: 36px;
+    font-weight: 900;
+}
 
 .nxt_btn{
     width:100%;
@@ -600,6 +610,11 @@ header .hdmain > a:visited{
         background-color:#777;
         opacity: 0.7;
     }
+    .hd_title{
+        font-size: 12px;
+        left:10%;
+        top:10%;
+    }
     .nxt_btn{
         /* OK */
         display: none;
@@ -1102,6 +1117,9 @@ header .hdmain > a:visited{
         background-color:#777;
         opacity: 0.7;
     }
+    .hd_title{
+        font-size:20px;
+    }
 
     .nxt_btn > .next{
         padding:0 5%;
@@ -1494,6 +1512,9 @@ header .hdmain > a:visited{
         object-position: bottom;
         background-color:#777;
         opacity: 0.7;
+    }
+    .hd_title{
+        font-size: 25px;
     }
 
     /* gallery ////////////////////////*/
