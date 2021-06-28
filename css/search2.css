@@ -285,6 +285,7 @@
         font-size:20px;
         color:white;
         letter-spacing: 20px;
+        width: fit-content;
     }
 
     /* 검색결과 페이지 //////////////////// */

@@ -24,9 +24,52 @@
     font-size:36px;
     color:white;
     letter-spacing: 20px;
+    width: fit-content;
 }
 
 
+/* 컨테이너 //////////////////////// */
+.container{
+    margin:0 10%;
+}
+.con-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con-1 h2{
+    width:120px;
+    font-weight: 900;
+    text-align: left;
+    margin:50px auto;
+    /* border: 1px solid black; */
+    font-size: 25px;
+}
+.con-1 span{
+    height: 1px;
+    width: 100%;
+    margin: 0 5%;
+    background-color: #a89968;
+}
+
+.con-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.con-2 article{
+    width:25%;
+}
+.con-2 img{
+    vertical-align: top;
+    font-size: 0;
+    border:1px solid #777;
+}
+.con-2 p{
+    font-weight: 900;
+    font-size: 18px;
+    margin: 10px 0;
+}
 
 
 
@@ -58,6 +101,15 @@
         font-size:20px;
         color:white;
         letter-spacing: 20px;
+    }
+    .con-1 h2{
+        font-size: 18px;
+    }
+    .con-2 p{
+        font-size: 16px;
+    }
+    .con-2 article{
+        width:50%;
     }
 }
 

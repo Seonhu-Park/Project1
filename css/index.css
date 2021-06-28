@@ -136,7 +136,10 @@ header .hdmain a:hover{
     display:flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin:130px 0 30px;
+    margin:100px 0 30px;
+}
+.con_hd:nth-of-type(1){
+    margin:80px 0 30px;
 }
 .con_hd > a{
     font-size:18px;
@@ -1155,43 +1158,7 @@ header .hdmain > a:visited{
 
 
     /* container ////////////////////////*/
-    .title{
-        /* OK */
-        color:white;
-        background-color: black;
-        display:inline-block;
-        width:fit-content;
-        height:30px;
-        padding:0 10px;
-        text-align: center;
-        font-size:16px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-    }
-    .con_hd{
-        /* OK */
-        width:100%;
-        height: 40px;
-        display:flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin:50px 0 20px;
-    }
-    .con_hd > a{
-        /* OK */
-        font-size:14px;
-        color:#a89968;
-    }
-    .con_hd .title a{
-        text-decoration: none;
-        color:white;
-    }
-    header .hdmain a:visited{
-        text-decoration: none;
-        color:white;
-    }
+    
 
     /* gallery ////////////////////////*/
     .gal{
@@ -1426,7 +1393,7 @@ header .hdmain > a:visited{
     .lbr > .con_hd{
         /* OK */
         width:90%;
-        margin:50px auto 20px;
+        margin:80px auto 30px;
     }
     .lb_all .lb_list{
         /* OK */
