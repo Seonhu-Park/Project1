@@ -44,7 +44,7 @@
     /* border:1px solid #fdd000; */
     padding:20px 60px 20px 20px;
     font-size: 36px;
-    font-weight: 1000;
+    font-weight: 900;
     overflow: hidden;
     /* mix-blend-mode: difference; */
 }
@@ -146,7 +146,7 @@ header .hdmain a:hover{
 }
 .title{
     color:white;
-    background-color: none;
+    background-color: rgba(0,0,0,0);
     display:inline-block;
     width:fit-content;
     height:40px;
