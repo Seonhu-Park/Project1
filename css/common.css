@@ -91,6 +91,7 @@ header .hdmain .bgmenu1{
     width:35px;
     height:25px;
     z-index: 10;
+    margin-left:5px;
 }
 header .hdmain .bgmenu1 a{
     width:35px;
