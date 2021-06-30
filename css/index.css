@@ -39,14 +39,12 @@
     position: absolute;
     left:15%;
     top:15%;
-    background-color:rgba(0,0,0,0.8);
+    background-color:rgba(0,0,0);
     color:white;
-    /* border:1px solid #fdd000; */
-    padding:20px 60px 20px 20px;
+    padding:20px 100px 20px 20px;
     font-size: 36px;
     font-weight: 900;
     overflow: hidden;
-    /* mix-blend-mode: difference; */
 }
 .hd_title::after{
     content:'';
@@ -71,10 +69,17 @@
     transform: translate(0, -50%);
 }
 .nxt_btn > .next{
-    padding:0 10%;
+    padding:0 5%;
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+.next a{
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.next a:hover{
+    opacity: 1;
 }
 .nav_list{
     position:absolute;
@@ -91,20 +96,26 @@
     height: 10px;
     background-color:#fdd000;
     border-radius: 50px;
+    opacity: 0.8;
+    border:1px solid white;
 }
 .nav_list > span:nth-child(2) a{
     display: inline-block;
     width:10px;
     height: 10px;
-    background-color:white;
+    background-color:#777;
     border-radius: 50px;
+    opacity: 0.8;
+    border:1px solid white;
 }
 .nav_list > span:nth-child(3) a{
     display: inline-block;
     width:10px;
     height: 10px;
-    background-color:white;
+    background-color:#777;
     border-radius: 50px;
+    opacity: 0.8;
+    border:1px solid white;
 }
 .hd_more{
     position: absolute;
@@ -390,12 +401,6 @@ header .hdmain > a:visited{
     border-radius: 100%;
     background-color: #000;
 }
-.cl .cl_num span:nth-of-type(4) a{
-    display: inline-block;
-    width:3px; height: 10px;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-}
 
 /* exhibition //////////////////////////// */
 .exh{
@@ -430,6 +435,20 @@ header .hdmain > a:visited{
     width:50px;
     height: 50px;
 }
+.thm_1 span a{
+    opacity: 0.5;
+    transition:0.5s;
+}
+.thm_1 span a:hover{
+    opacity: 1;
+}
+.thm_3 span a{
+    opacity: 0.5;
+    transition:0.5s;
+}
+.thm_3 span a:hover{
+    opacity: 1;
+}
 
 .exh_thm .thm_2{
     position: relative;
@@ -447,6 +466,11 @@ header .hdmain > a:visited{
     /* transition:0.3s; */
     /* font-size: 31px; */
     letter-spacing: 5px;
+    transition: 0.3s;
+}
+.exh_thm .thm_2:hover img{
+    opacity: 0.6;
+    transition: 0.5s;
 }
 .exh_thm .thm_2 article{
     position: absolute;
@@ -466,7 +490,7 @@ header .hdmain > a:visited{
     font-size:30px;
     line-height: 40px;
     margin-bottom:10px;
-    transition:0.3s;
+    /* transition: 0.3s; */
 }
 .exh_thm .thm_2 article span{
     color:white;
@@ -524,7 +548,7 @@ header .hdmain > a:visited{
 }
 .lb_all{
     margin:auto;
-    background:url('../img/mgz1-2.jpg') 50% 50% no-repeat;
+    background:url('../img/img3.jpg') 50% 50% no-repeat;
     background-size: cover;
 }
 .lb_all .lb_list{
@@ -566,6 +590,11 @@ header .hdmain > a:visited{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.5s;
+}
+.lb_all .lb_list .mgz article p:hover{
+    background-color: #fdd000;
+    color:black;
 }
 .lb_all .lb_list .mgz article figure{
     position: relative;
@@ -589,6 +618,14 @@ header .hdmain > a:visited{
     display:block;
 }
 
+.mgz a{
+    text-decoration: none;
+    color:white;
+}
+.mgz a:visited{
+    text-decoration: none;
+    color:white;
+}
 
 
 
@@ -630,7 +667,7 @@ header .hdmain > a:visited{
     }
     .hd_title{
         font-size: 12px;
-        left:10%;
+        left:5%;
         top:10%;
     }
     .nxt_btn{
@@ -908,10 +945,6 @@ header .hdmain > a:visited{
         justify-content: center;
         align-items: center;
     }
-    .cl .cl_num span:last-child{
-        display:none;
-    }
-
 
     /* exhibition ////////////////////////// */
     .exh{
@@ -1092,6 +1125,10 @@ header .hdmain > a:visited{
     .mgz article:hover .fav{
         display:block;
     } 
+    .lb_all .lb_list .mgz article p:hover{
+        background-color: rgba(0,0,0,0);
+        color:white;
+    }
 }
 
 
@@ -1532,7 +1569,7 @@ header .hdmain > a:visited{
         opacity: 0.7;
     }
     .hd_title{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     /* gallery ////////////////////////*/

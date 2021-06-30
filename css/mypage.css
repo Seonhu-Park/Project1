@@ -70,7 +70,46 @@
     font-size: 18px;
     margin: 10px 0;
 }
+.con-2 figure{
+    position: relative;
+}
+.con-2 figcaption{
+    display: none;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width:90%;
+    height: 90%;
+    background-color:rgba(0,0,0,0.8);
+    transition:0.5s;
+}
+.con-2 figcaption p{
+    height: 100%;
+    font-weight: 900;
+    font-size: 18px;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color:#fdd000;
+    letter-spacing: 5px;
+}
+.con-2 figure:hover figcaption{
+    display: block;
+    transition:0.5s;
+}
+.con-2 figure:hover img{
+    opacity: 0.5;
+}
 
+.con-2 a{
+    text-decoration: none;
+}
+.con-2 a:visited{
+    color:#fdd000;
+}
 
 
 
@@ -110,6 +149,12 @@
     }
     .con-2 article{
         width:50%;
+    }
+    .con-2 figure:hover figcaption{
+        display: none;
+    }
+    .con-2 figure:hover img{
+        opacity: 1;
     }
 }
 
