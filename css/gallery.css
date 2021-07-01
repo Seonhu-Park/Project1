@@ -58,10 +58,9 @@
     margin-bottom:30px;
 }
 .gal .con_thm ul li{
-    width:30%;
-    height: 25vw;
+    width:23%;
+    height: 40vh;
     margin-right: 30px;
-    border:1px solid #a89968;
     transition: 0.5s;
 }
 .gal .con_thm ul li figure .img_hv{
@@ -105,11 +104,13 @@
     margin:0;
 }
 .gal .con_thm ul li figure{
+    width:100%;
     position: relative;
-    height:55%;
+    height:60%;
     overflow: hidden;
     position: relative;
     z-index: -5;
+    border:1px solid #a89968;
 }
 .gal .con_thm ul li figure img{
     position: absolute;
@@ -121,19 +122,25 @@
     transition: 0.5s;
 }
 .figcaption{
-    padding:30px;
-    height: 45%;
+    padding:20px 10px 0 10px;
+    height: 40%;
 }
 .galtt{
     font-size:18px;
     color:#000;
     margin-bottom:10px;
     transition: color 0.5s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .galtxt{
     font-size: 16px;
     color:#777;
     transition: 0.5s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 
@@ -191,7 +198,7 @@
     }
     .gal .con_thm ul li{
         /* OK */
-        width:50%;
+        width:24%;
         height: 20vw;
         margin-right: 10px;
         border:0px solid #a89968;
@@ -300,8 +307,8 @@
     }
     .gal .con_thm ul li{
         /* OK */
-        width:50%;
-        height: 20vw;
+        width:24%;
+        height: 30vh;
         margin-right: 10px;
         border:0px solid #a89968;
         transition: 0.5s;

@@ -211,10 +211,9 @@ header .hdmain > a:visited{
     align-items: center;
 }
 .gal .con_thm ul li{
-    width:30%;
-    height: 25vw;
+    width:23%;
+    height: 40vh;
     margin-right: 30px;
-    border:1px solid #a89968;
     transition: 0.5s;
 }
 .gal .con_thm ul li figure .img_hv{
@@ -259,10 +258,11 @@ header .hdmain > a:visited{
 }
 .gal .con_thm ul li figure{
     position: relative;
-    height:55%;
+    height:70%;
     overflow: hidden;
     position: relative;
     z-index: -5;
+    border:1px solid #a89968;
 }
 .gal .con_thm ul li figure img{
     position: absolute;
@@ -274,19 +274,29 @@ header .hdmain > a:visited{
     transition: 0.5s;
 }
 .figcaption{
-    padding:30px;
-    height: 45%;
+    padding:0px;
+    height: 30%;
 }
 .galtt{
+    padding:20px 20px 0 20px;
     font-size:20px;
     color:#000;
     margin-bottom:10px;
     transition: 0.5s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-.galtxt{
+.figcaption .galtxt{
+    padding:10px 20px 20px 20px;
+    display: block;
+    height: 40%;
     font-size: 16px;
     color:#777;
     transition: 0.5s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* class ////////////////////////*/
@@ -575,6 +585,7 @@ header .hdmain > a:visited{
     border:1px solid black;
     width:100%;
     vertical-align: top;
+    border-radius: 0 10px 10px 0;
 }
 .lb_all .lb_list .mgz article p{
     margin:30px auto 0;
@@ -1241,7 +1252,7 @@ header .hdmain > a:visited{
     }
     .gal .con_thm ul li{
         /* OK */
-        width:50%;
+        width:24%;
         height: 20vw;
         margin-right: 10px;
         border:0px solid #a89968;
@@ -1267,15 +1278,19 @@ header .hdmain > a:visited{
         position: relative;
         z-index: -5;
         border:1px solid #a89968;
+        border-radius: 0px 50px 0 0;
     }
     .figcaption{
         /* OK */
         /* display: none; */
-        padding:5px;
         height: 23%;
     }
     .figcaption .galtt{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 16px;
+        padding: 5px;
     }
     .figcaption .galtxt{
         display: none;
@@ -1582,15 +1597,17 @@ header .hdmain > a:visited{
         overflow: hidden;
         z-index: -5;
         border:1px solid #a89968;
+        border-radius: 0px 50px 0 0;
     }
+
     .figcaption{
-        padding:0 10px;
+        padding:0px;
     }
     .galtt{
-        padding:30px 0;
+        padding:10px 10px 0 10px;
     }
-    .galtxt{
-        display: none;
+    .figcaption .galtxt{
+        padding:0px 10px 10px 10px;
     }
 
 
@@ -1648,4 +1665,8 @@ header .hdmain > a:visited{
             background-color:#777;
             opacity: 0.7;
         }
+        .gal .con_thm ul li figure{
+            border-radius: 0px 100px 0 0;
+        }
+
 }
