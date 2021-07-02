@@ -232,10 +232,20 @@ header .hdmain > a:visited{
     height: 100%;
     background-color: rgba(0,0,0,0.7);
 }
-.gal .con_thm ul li:hover figure > .img_hv_ic span{
+.gal .con_thm ul li figure > .img_hv_ic span{
     position:absolute;
     left:50%; top:50%;
     transform: translate(-50%, -50%);
+}
+.gal .con_thm ul li:hover figure > .img_hv_ic span{
+    animation:plusic 1s forwards;
+}
+@keyframes plusic{
+    0%{
+        
+    }
+    100%{
+        transform:rotate(180deg) translate(50%, 50%);}
 }
 .gal .con_thm ul li:hover figure > .img_hv_ic span:nth-child(1){
     width:80px;
