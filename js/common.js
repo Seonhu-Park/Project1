@@ -4,12 +4,12 @@ $('header').load('inc.html .hdmain',burger);
 $('footer').load('inc.html .end');
 
 
-const elBurger = document.querySelector('.bgmenu1');
-const elNav = document.querySelector('.bgmenu2');
-const elBurBtn = document.querySelectorAll('.bgmenu1 > a span');
 
 
 function burger(){
+    const elBurger = document.querySelector('.bgmenu1');
+    const elNav = document.querySelector('.bgmenu2');
+    const elBurBtn = document.querySelectorAll('.bgmenu1 > a span');
     for(let i=0; i<elBurBtn.length; i++){
         elBurger.addEventListener('click',function(){
             // this.classList.toggle('active');
@@ -17,11 +17,6 @@ function burger(){
             elBurBtn[i].classList.toggle('xbtn');
         });
     }
-
-    $('.bgmenu1').on('click',function(){
-        $('.bgmenu2').toggleClass('active');
-    })
-
 };
 
 

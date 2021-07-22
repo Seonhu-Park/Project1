@@ -1,4 +1,25 @@
 function init(){
+
+    $('header').load('inc.html .hdmain',burger);
+    $('footer').load('inc.html .end');
+
+
+
+
+    function burger(){
+        const elBurger = document.querySelector('.bgmenu1');
+        const elNav = document.querySelector('.bgmenu2');
+        const elBurBtn = document.querySelectorAll('.bgmenu1 > a span');
+        for(let i=0; i<elBurBtn.length; i++){
+            elBurger.addEventListener('click',function(){
+                // this.classList.toggle('active');
+                elNav.classList.toggle('active');
+                elBurBtn[i].classList.toggle('xbtn');
+            });
+        }
+    };
+
+
     fetch('data/data_class.json')
     .then( res => res.json() )
     .then( data => callback(data) );

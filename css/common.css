@@ -178,6 +178,11 @@ header .hdmain .hdsrc a img{
     align-items: center;
 }
 
+header .hdmain a:hover{
+    color:#fdd000;
+    transition: 0.5s;
+}
+
 
 
 
