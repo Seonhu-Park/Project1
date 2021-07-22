@@ -1,3 +1,5 @@
+function init(){
+
 $('header').load('inc.html .hdmain',burger);
 $('footer').load('inc.html .end');
 
@@ -15,6 +17,11 @@ function burger(){
             elBurBtn[i].classList.toggle('xbtn');
         });
     }
+
+    $('.bgmenu1').on('click',function(){
+        $('.bgmenu2').toggleClass('active');
+    })
+
 };
 
 
@@ -76,4 +83,5 @@ for(let i=0; i<elScr.length; i++){
     }
 }
 
-
+}
+window.onload = init;
