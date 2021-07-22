@@ -1,0 +1,48 @@
+{
+    "work":[
+        {
+            "link":"https://livingdesignfair.co.kr/fairDash.do",
+            "thum":"img/exh5.jpg",
+            "tit":"서울리빙디자인페어",
+            "date":"2021년 5월 26일(수) ~ 5월 30일(일)",
+            "where":"코엑스 전관(A, B, C, D 홀)"
+        },
+        {
+            "link":"https://incheon.livingdesignfair.co.kr/fairDash.do?hl=KO",
+            "thum":"img/exh6.jpg",
+            "tit":"인천리빙디자인페어",
+            "date":"2021년 5월 26일(수) ~ 5월 30일(일)",
+            "where":"코엑스 전관(A, B, C, D 홀)"
+        },
+        {
+            "link":"https://www.designweek.co.kr/home/2021/bdw/KOR/bdw_intro.html",
+            "thum":"img/exh7.jpg",
+            "tit":"부산디자인워크",
+            "date":"2021년 5월 26일(수) ~ 5월 30일(일)",
+            "where":"코엑스 전관(A, B, C, D 홀)"
+        }
+    ],
+    "work2":[
+        {
+            "link":"https://seoul.designfestival.co.kr/fairDash.do?hl=KOR",
+            "thum":"img/exh3.jpg",
+            "tit":"서울디자인페스티벌",
+            "date":"2021년 5월 26일(수) ~ 5월 30일(일)",
+            "where":"코엑스 전관(A, B, C, D 홀)"
+        },
+        {
+            "link":"https://www.creatorsground.co.kr/fairDash.do",
+            "thum":"img/exh4.jpg",
+            "tit":"크리에이터스그라운드",
+            "date":"2021년 5월 26일(수) ~ 5월 30일(일)",
+            "where":"코엑스 전관(A, B, C, D 홀)"
+        },
+        {
+            "link":"https://www.creatorsground.co.kr/fairDash.do",
+            "thum":"img/exh4.jpg",
+            "tit":"크리에이터스그라운드",
+            "date":"2021년 5월 26일(수) ~ 5월 30일(일)",
+            "where":"코엑스 전관(A, B, C, D 홀)"
+        }
+    ]
+}

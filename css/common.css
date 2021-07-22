@@ -14,6 +14,8 @@ a{
 
 
 
+
+
 /* link ////////////////////////*/
 header .hdmain a{
     text-decoration: none;
@@ -97,9 +99,6 @@ header .hdmain .bgmenu1 a{
     width:35px;
     height:25px;
 }
-header .hdmain .bgmenu1 a:hover + .bgmenu2{
-    display:flex;
-}
 header .hdmain .bgmenu1 > a span{
     position: absolute;
     right:0;
@@ -109,14 +108,14 @@ header .hdmain .bgmenu1 > a span{
     border-radius: 5px;
     z-index:2;
 }
-header .hdmain .bgmenu1:hover a span:nth-child(1){
+.bgmenu1 > a span:nth-of-type(1).xbtn{
     transform: rotate(45deg);
     top:50%;
 }
-header .hdmain .bgmenu1:hover a span:nth-child(2){
+.bgmenu1 > a span:nth-of-type(2).xbtn{
     display: none;
 }
-header .hdmain .bgmenu1:hover a span:nth-child(3){
+.bgmenu1 > a span:nth-of-type(3).xbtn{
     transform: rotate(-45deg);
     top:50%;
 }
@@ -132,7 +131,6 @@ header .hdmain .bgmenu1:hover a span:nth-child(3){
     bottom:0%;
 }
 .bgmenu2{
-    display:none;
     position:fixed;
     right:0; top:65px;
     width:50%;
@@ -142,12 +140,12 @@ header .hdmain .bgmenu1:hover a span:nth-child(3){
     font-size:30px;
     flex-direction: column;
     white-space: pre-line;
-    animation:bgmn 0.8s forwards;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    transform:translateX(100%);
+    transition:0.5s;
 }
-@keyframes bgmn{
-    0%{transform: translateX(100%);}
-    100%{transform: translateX(0);}
+.bgmenu2.active{
+    transform:translateX(0);
 }
 .bgmenu2 .bgmenu2-1{
     width:70%;
@@ -194,7 +192,7 @@ footer{
     margin-top:150px;
 }
 
-footer div{
+footer .end-txt{
     padding:10px;
 }
 
@@ -265,7 +263,7 @@ footer .topbtn{
     }
     .bgmenu2{
         /* OK */
-        display:none;
+        /* display:none; */
         position:fixed;
         right:0; top:45px;
         width:100%;
@@ -276,7 +274,6 @@ footer .topbtn{
         flex-direction: column;
         align-items: center;
         white-space: pre-line;
-        animation:bgmn 0.8s forwards;
     }
     header .hdmain .hdsrc{
         /* OK */
@@ -319,7 +316,7 @@ footer .topbtn{
         margin-top:60px;
     }
 
-    footer div{
+    footer .end-txt{
         /* OK */
         padding:5px;
     }
@@ -383,6 +380,9 @@ footer .topbtn{
         height:18px;
         z-index: 10;
     }
+    header .hdmain .bgmenu1 a.active{
+    
+    }
     header .hdmain .bgmenu1 a{
         /* OK */
         width:25px;
@@ -390,7 +390,6 @@ footer .topbtn{
     }
     .bgmenu2{
         /* OK */
-        display:none;
         position:fixed;
         right:0; top:45px;
         width:70%;
@@ -402,7 +401,11 @@ footer .topbtn{
         flex-direction: column;
         align-items: center;
         white-space: pre-line;
-        animation:bgmn 0.8s forwards;
+        transform:translateX(100%);
+        transition:0.5s;
+    }
+    .bgmenu2.active{
+        transform:translateX(0);
     }
     header .hdmain .hdsrc{
         /* OK */
@@ -445,7 +448,7 @@ footer .topbtn{
         margin-top:60px;
     }
 
-    footer div{
+    footer .end-txt{
         /* OK */
         padding:5px;
     }

@@ -88,7 +88,7 @@
 .con-1 ul{}
 .con-1 ul li{
     height:40vw;
-    margin-right:20px;
+    /* margin-right:20px; */
     /* margin-bottom:100px; */
 }
 .con-1 ul li:last-child{
@@ -112,6 +112,9 @@
 }
 .con-1 .list2 li{
     width:30%;
+}
+.con-1 .list2 li:last-child{
+    opacity: 0;
 }
 .con-1 figure{
     position: relative;

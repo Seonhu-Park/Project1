@@ -1,6 +1,17 @@
 @charset "uft-8";
 @import url('common.css');
 
+
+.scr-con{
+    opacity: 0;
+    transition:1.5s;
+    transform:translateY(50px);
+}
+.scr-con.active{
+    opacity: 1;
+    transform:translateY(0px);
+}
+
 /* header banner //////////////////*/
 .hd_img{
     margin:0 auto;
@@ -20,15 +31,15 @@
     width:100%;
     display: flex;
     justify-content: flex-start;
-    animation: hd_frame 25s infinite;
+    /* animation: hd_frame 25s infinite; */
 }
-@keyframes hd_frame{
+/* @keyframes hd_frame{
     0%{transform: translateX(0%);}
     25%{transform: translateX(-100%);}
     50%{transform: translateX(-200%);}
     75%{transform: translateX(-300%);}
     100%{transform: translateX(-400%);}
-}
+} */
 .hd_img .hd_frame figure a img{
     width:100%;
     object-position: bottom;
@@ -437,16 +448,13 @@ header .hdmain > a:visited{
 
 .exh_thm .thm_1{
     position: relative;
-    width:510px;
-    height:330px;
+    /* width:510px;
+    height:330px; */
     overflow: hidden;
     border:1px solid #a89968;
     border-radius: 10px;
-    margin-right:20px;
-}
-.exh_thm .thm_1 figure{
-    opacity: 0.3;
-}
+    /* margin-right:20px; */
+}   
 .exh_thm .thm_1 > span{
     position: absolute;
     right:5%;
@@ -472,79 +480,43 @@ header .hdmain > a:visited{
 
 .exh_thm .thm_2{
     position: relative;
-    width:540px;
-    height:350px;
     overflow: hidden;
     border:1px solid #000;
     border-radius: 10px;
-    margin-right:20px;
-    box-shadow:0px 0px 20px rgba(0,0,0,0.6);
 }
-.exh_thm .thm_2:hover article h2{
-    /* display:block; */
+.exh_thm article:hover h2{
     color:#fdd000;
-    /* transition:0.3s; */
-    /* font-size: 31px; */
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     transition: 0.3s;
 }
-.exh_thm .thm_2:hover img{
+.exh_thm img:hover{
     opacity: 0.6;
     transition: 0.5s;
 }
-.exh_thm .thm_2 article{
+.exh_thm article{
     position: absolute;
     left:0;
     bottom:0;
     background-color: rgba(0,0,0,0.7);
     padding:30px;
     width:100%;
-    /* animation:a1 0.5s forwards; */
 }
-/* @keyframes a1{
-    from{bottom:-100%;}
-    to{bottom:0;}
-} */
-.exh_thm .thm_2 article h2{
+.exh_thm article h2{
     color:white;
-    font-size:30px;
+    font-size:20px;
     line-height: 40px;
     margin-bottom:10px;
     /* transition: 0.3s; */
 }
-.exh_thm .thm_2 article span{
+.exh_thm article span{
     color:white;
-    font-size: 18px;
-}
-.thm_2 .exh_num{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right:3%;
-    top:3%;
-    width:65px;
-    height: 25px;
-    font-size:16px;
-    background-color:rgba(0,0,0,0.7);
-    border:2px solid white;
-    border-radius: 50px;
-    color:white;
-}
-.thm_2 .exh_num span:nth-child(1){
-    color:#fdd000;
-    font-weight: bold;
+    font-size: 16px;
 }
 .exh_thm .thm_3{
     position: relative;
-    width:510px;
-    height:330px;
     overflow: hidden;
     border:1px solid #a89968;
     border-radius: 10px;
-}
-.exh_thm .thm_3 figure{
-    opacity: 0.3;
 }
 .exh_thm .thm_3 > span{
     position: absolute;
@@ -671,15 +643,16 @@ header .hdmain > a:visited{
         width:100%;
         display: flex;
         justify-content: flex-start;
-        animation: hd_frame 15s infinite;
+        /* animation: hd_frame 15s infinite; */
     }
-    @keyframes hd_frame{
+    /* @keyframes hd_frame{
         0%{transform: translateX(0%);}
         25%{transform: translateX(-100%);}
         50%{transform: translateX(-200%);}
         75%{transform: translateX(-300%);}
         100%{transform: translateX(-400%);}
-    }
+    } */
+    
     .hd_img .hd_frame figure a img{
         width:100%;
         object-position: bottom;
@@ -1169,7 +1142,7 @@ header .hdmain > a:visited{
     .hd_img .hd_frame{
         margin:0 auto;
         width:100%;
-        height: 33vw;
+        height: 100%;
         margin:0 auto;
         overflow: hidden;
     }
@@ -1178,15 +1151,15 @@ header .hdmain > a:visited{
         width:100%;
         display: flex;
         justify-content: flex-start;
-        animation: hd_frame 15s infinite;
+        /* animation: hd_frame 15s infinite; */
     }
-    @keyframes hd_frame{
+    /* @keyframes hd_frame{
         0%{transform: translateX(0%);}
         25%{transform: translateX(-100%);}
         50%{transform: translateX(-200%);}
         75%{transform: translateX(-300%);}
         100%{transform: translateX(-400%);}
-    }
+    } */
     .hd_img .hd_frame figure a img{
         width:100%;
         object-position: bottom;
@@ -1569,7 +1542,7 @@ header .hdmain > a:visited{
     .hd_img .hd_frame{
         margin:0 auto;
         width:100%;
-        height: 26vw;
+        height: 100%;
         margin:0 auto;
         overflow: hidden;
     }
@@ -1578,15 +1551,15 @@ header .hdmain > a:visited{
         width:100%;
         display: flex;
         justify-content: flex-start;
-        animation: hd_frame 15s infinite;
+        /* animation: hd_frame 15s infinite; */
     }
-    @keyframes hd_frame{
+    /* @keyframes hd_frame{
         0%{transform: translateX(0%);}
         25%{transform: translateX(-100%);}
         50%{transform: translateX(-200%);}
         75%{transform: translateX(-300%);}
         100%{transform: translateX(-400%);}
-    }
+    } */
     .hd_img .hd_frame figure a img{
         width:100%;
         object-position: bottom;
@@ -1651,7 +1624,7 @@ header .hdmain > a:visited{
         .hd_img .hd_frame{
             margin:0 auto;
             width:100%;
-            height: 26vw;
+            height: 100%;
             margin:0 auto;
             overflow: hidden;
         }
@@ -1660,15 +1633,15 @@ header .hdmain > a:visited{
             width:100%;
             display: flex;
             justify-content: flex-start;
-            animation: hd_frame 15s infinite;
+            /* animation: hd_frame 15s infinite; */
         }
-        @keyframes hd_frame{
+        /* @keyframes hd_frame{
             0%{transform: translateX(0%);}
             25%{transform: translateX(-100%);}
             50%{transform: translateX(-200%);}
             75%{transform: translateX(-300%);}
             100%{transform: translateX(-400%);}
-        }
+        } */
         .hd_img .hd_frame figure a img{
             width:100%;
             object-position: bottom;

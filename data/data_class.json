@@ -1,0 +1,74 @@
+{
+    "work":[
+        {
+            "link":"class-2.html",
+            "thum":"img/class1.jpg",
+            "tit":"자작나무 껍찔로 휴대폰 가방 만들기",
+            "detail":"스웨덴에서 시작한 북유럽의 자작나무 공예 '네베르스로이드'를 배워보세요.",
+            "date":"일 시",
+            "date_info":" 7월 14일(수) 11시 ~ 13시",
+            "where":"장 소",
+            "where_info":" 디자인하우스1층 (서울시 중구 동호로 272)",
+            "teacher":"강 사",
+            "teacher_info":" 김현정",
+            "join":"모 집 중",
+            "join_us":"수강신청 >"
+        },
+        {
+            "link":"class-2.html",
+            "thum":"img/class2.jpg",
+            "tit":"정원놀이와 함께하는 코케다마 볼 만들기",
+            "detail":"스웨덴에서 시작한 북유럽의 자작나무 공예 '네베르스로이드'를 배워보세요.",
+            "date":"일 시",
+            "date_info":" 7월 14일(수) 11시 ~ 13시",
+            "where":"장 소",
+            "where_info":" 디자인하우스1층 (서울시 중구 동호로 272)",
+            "teacher":"강 사",
+            "teacher_info":" 김현정",
+            "join":"모 집 중",
+            "join_us":"수강신청 >"
+        },
+        {
+            "link":"class-2.html",
+            "thum":"img/class3.jpg",
+            "tit":"로우크래프트의 타원형 볼 만들기",
+            "detail":"스웨덴에서 시작한 북유럽의 자작나무 공예 '네베르스로이드'를 배워보세요.",
+            "date":"일 시",
+            "date_info":" 7월 14일(수) 11시 ~ 13시",
+            "where":"장 소",
+            "where_info":" 디자인하우스1층 (서울시 중구 동호로 272)",
+            "teacher":"강 사",
+            "teacher_info":" 김현정",
+            "join":"모 집 중",
+            "join_us":"수강신청 >"
+        },
+        {
+            "link":"class-2.html",
+            "thum":"img/class4.jpg",
+            "tit":"이외회 선생님과 함께하는 전통 간세 인형 만들기",
+            "detail":"스웨덴에서 시작한 북유럽의 자작나무 공예 '네베르스로이드'를 배워보세요.",
+            "date":"일 시",
+            "date_info":" 7월 14일(수) 11시 ~ 13시",
+            "where":"장 소",
+            "where_info":" 디자인하우스1층 (서울시 중구 동호로 272)",
+            "teacher":"강 사",
+            "teacher_info":" 김현정",
+            "join":"모 집 중",
+            "join_us":"수강신청 >"
+        },
+        {
+            "link":"class-2.html",
+            "thum":"img/class5.jpg",
+            "tit":"스웨덴에서 시작한 북유럽의 자작나무 공예 '네베르스로이드'를 배워보세요.",
+            "detail":"스웨덴에서 시작한 북유럽의 자작나무 공예 '네베르스로이드'를 배워보세요.",
+            "date":"일 시",
+            "date_info":" 7월 14일(수) 11시 ~ 13시",
+            "where":"장 소",
+            "where_info":" 디자인하우스1층 (서울시 중구 동호로 272)",
+            "teacher":"강 사",
+            "teacher_info":" 김현정",
+            "join":"모 집 중",
+            "join_us":"수강신청 >"
+        }
+    ]
+}
