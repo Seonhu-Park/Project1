@@ -124,7 +124,7 @@
 /*  슬라이드 이미지, 좌우버튼 인디게이터  */
 .slider{
     width:100%;
-    height:45vh;
+    height:60vh;
     position: relative;
 }
 .slick-list{

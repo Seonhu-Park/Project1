@@ -22,7 +22,7 @@
 .hd_img .hd_frame{
     margin:0 auto;
     width:100%;
-    height: 26vw;
+    height: 100%;
     margin:0 auto;
     overflow: hidden;
 }
@@ -31,18 +31,10 @@
     width:100%;
     display: flex;
     justify-content: flex-start;
-    /* animation: hd_frame 25s infinite; */
 }
-/* @keyframes hd_frame{
-    0%{transform: translateX(0%);}
-    25%{transform: translateX(-100%);}
-    50%{transform: translateX(-200%);}
-    75%{transform: translateX(-300%);}
-    100%{transform: translateX(-400%);}
-} */
 .hd_img .hd_frame figure a img{
     width:100%;
-    object-position: bottom;
+    object-fit: cover;
     background-color:#777;
     opacity: 0.7;
 }
@@ -321,6 +313,7 @@ header .hdmain > a:visited{
 }
 
 /* class ////////////////////////*/
+
 .cl{
     padding:0 10%;
 }
@@ -446,38 +439,6 @@ header .hdmain > a:visited{
     width:100%;
 }
 
-.exh_thm .thm_1{
-    position: relative;
-    /* width:510px;
-    height:330px; */
-    overflow: hidden;
-    border:1px solid #a89968;
-    border-radius: 10px;
-    /* margin-right:20px; */
-}   
-.exh_thm .thm_1 > span{
-    position: absolute;
-    right:5%;
-    top:50%;
-    transform:translate(0, -50%);
-    width:50px;
-    height: 50px;
-}
-.thm_1 span a{
-    opacity: 0.5;
-    transition:0.5s;
-}
-.thm_1 span a:hover{
-    opacity: 1;
-}
-.thm_3 span a{
-    opacity: 0.5;
-    transition:0.5s;
-}
-.thm_3 span a:hover{
-    opacity: 1;
-}
-
 .exh_thm .thm_2{
     position: relative;
     overflow: hidden;
@@ -511,20 +472,6 @@ header .hdmain > a:visited{
 .exh_thm article span{
     color:white;
     font-size: 16px;
-}
-.exh_thm .thm_3{
-    position: relative;
-    overflow: hidden;
-    border:1px solid #a89968;
-    border-radius: 10px;
-}
-.exh_thm .thm_3 > span{
-    position: absolute;
-    left:5%;
-    top:50%;
-    transform:translate(0, -50%);
-    width:50px;
-    height: 50px;
 }
 
 
@@ -625,6 +572,11 @@ header .hdmain > a:visited{
 /* 반응형 모바일 */
 @media (min-width:360px) and (max-width:767px){
    /* header banner //////////////////*/
+    .container{
+        width:100%;
+        overflow: hidden;
+    }
+
     .hd_img{
         margin:0 auto;
         width:100%;
@@ -643,15 +595,7 @@ header .hdmain > a:visited{
         width:100%;
         display: flex;
         justify-content: flex-start;
-        /* animation: hd_frame 15s infinite; */
     }
-    /* @keyframes hd_frame{
-        0%{transform: translateX(0%);}
-        25%{transform: translateX(-100%);}
-        50%{transform: translateX(-200%);}
-        75%{transform: translateX(-300%);}
-        100%{transform: translateX(-400%);}
-    } */
     
     .hd_img .hd_frame figure a img{
         width:100%;
@@ -663,6 +607,7 @@ header .hdmain > a:visited{
         font-size: 12px;
         left:5%;
         top:10%;
+        padding:10px 30px 10px 10px;
     }
     .nxt_btn{
         /* OK */
@@ -943,17 +888,14 @@ header .hdmain > a:visited{
     /* exhibition ////////////////////////// */
     .exh{
         /* OK */
-        padding:0 5%;
+        padding:0%;
+        width:100%;
+        margin:0 auto;
     }
-    .exh_thm .thm_1{
-        /* OK */
-        position: relative;
-        width:510px;
-        height:25vw;
-        overflow: hidden;
-        border:1px solid #a89968;
-        border-radius: 10px;
-        margin-right:10px;
+    
+    .exh_thm.center{
+        width:100%;
+        box-sizing: content-box;
     }
 
     .exh_thm .thm_2{
@@ -965,7 +907,7 @@ header .hdmain > a:visited{
         border:1px solid #000;
         border-radius: 10px;
         margin-right:10px;
-        box-shadow:0px 0px 20px rgba(0,0,0,0.6);
+        box-shadow:0px 0px 0px rgba(0,0,0,0.6);
     }
     .exh_thm .thm_2:hover article{
         /* OK */
@@ -1021,31 +963,6 @@ header .hdmain > a:visited{
         border:2px solid white;
         border-radius: 50px;
         color:white;
-    }
-    .exh_thm .thm_3{
-        /* OK */
-        position: relative;
-        width:510px;
-        height:23vw;
-        overflow: hidden;
-        border:1px solid #a89968;
-        border-radius: 10px;
-    }
-    .exh_thm .thm_1 > span{
-        position: absolute;
-        right:5%;
-        top:50%;
-        transform:translate(0, -50%);
-        width:40px;
-        height: 40px;
-    }
-    .exh_thm .thm_3 > span{
-        position: absolute;
-        left:5%;
-        top:50%;
-        transform:translate(0, -50%);
-        width:40px;
-        height: 40px;
     }
 
 
@@ -1151,15 +1068,7 @@ header .hdmain > a:visited{
         width:100%;
         display: flex;
         justify-content: flex-start;
-        /* animation: hd_frame 15s infinite; */
     }
-    /* @keyframes hd_frame{
-        0%{transform: translateX(0%);}
-        25%{transform: translateX(-100%);}
-        50%{transform: translateX(-200%);}
-        75%{transform: translateX(-300%);}
-        100%{transform: translateX(-400%);}
-    } */
     .hd_img .hd_frame figure a img{
         width:100%;
         object-position: bottom;
@@ -1378,18 +1287,8 @@ header .hdmain > a:visited{
         /* OK */
         padding:0 5%;
     }
-    .exh_thm .thm_1{
-        /* OK */
-        position: relative;
-        width:510px;
-        height:23vw;
-        overflow: hidden;
-        border:1px solid #a89968;
-        border-radius: 10px;
-        margin-right:20px;
-    }
 
-    .exh_thm .thm_2{
+    .exh_thm center > div{
         /* OK */
         position: relative;
         width:540px;
@@ -1448,15 +1347,6 @@ header .hdmain > a:visited{
         border:2px solid white;
         border-radius: 50px;
         color:white;
-    }
-    .exh_thm .thm_3{
-        /* OK */
-        position: relative;
-        width:510px;
-        height:23vw;
-        overflow: hidden;
-        border:1px solid #a89968;
-        border-radius: 10px;
     }
 
 
@@ -1551,15 +1441,7 @@ header .hdmain > a:visited{
         width:100%;
         display: flex;
         justify-content: flex-start;
-        /* animation: hd_frame 15s infinite; */
     }
-    /* @keyframes hd_frame{
-        0%{transform: translateX(0%);}
-        25%{transform: translateX(-100%);}
-        50%{transform: translateX(-200%);}
-        75%{transform: translateX(-300%);}
-        100%{transform: translateX(-400%);}
-    } */
     .hd_img .hd_frame figure a img{
         width:100%;
         object-position: bottom;
@@ -1567,7 +1449,7 @@ header .hdmain > a:visited{
         opacity: 0.7;
     }
     .hd_title{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     /* gallery ////////////////////////*/

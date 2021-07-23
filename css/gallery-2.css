@@ -10,37 +10,6 @@
 }
 
 
-
-/* 헤더이미지 ///////////////////// */
-/* .bd_hd{
-    display: none;
-    position: relative;
-    width:100%;
-    height:18vw;
-    overflow: hidden;
-    background-color: rgba(0,0,0);
-}
-.bd_hd figure{
-    background:url('../img/img5.jpg') 50% 90% no-repeat;
-    width:100%;
-    height: 100%;
-    background-size: cover;
-    opacity: 0.5;
-}
-.bd_hd span{
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-    font-size:36px;
-    color:white;
-    letter-spacing: 20px;
-    width: fit-content;
-} */
-
-
-
-
 /* gallery ////////////////////////*/
 .gal{
     width:100%;
@@ -70,8 +39,6 @@
 .gal_in article figure{
     height: 40vw;
     overflow: hidden;
-    background: url('../img/gl3.jpg') no-repeat 50% 50%;
-    background-size: cover;
     margin: 80px 0;
 }
 .gal_in article .in_con{

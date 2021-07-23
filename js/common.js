@@ -48,12 +48,12 @@ $(".exh_thm").slick({
     slidesToScroll: 1,
     autoplay:true,
     autoplaySpeed:2000,
-    centerPadding: '60px',
+    centerPadding: '30px',
     responsive:[
         {
             breakpoint: 767,
             settings : {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: false
             }
@@ -62,7 +62,6 @@ $(".exh_thm").slick({
   });
 
 const elScr = document.querySelectorAll('.scr-con');
-const elScrStl = document.querySelectorAll('.scr-con .active');
 
 for(let i=0; i<elScr.length; i++){
     window.addEventListener('scroll',function(){

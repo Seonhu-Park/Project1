@@ -195,6 +195,7 @@ footer{
     background:url('../img/hdbg2.jpeg') fixed;
     background-size: cover;
     margin-top:150px;
+    z-index: 10;
 }
 
 footer .end-txt{
