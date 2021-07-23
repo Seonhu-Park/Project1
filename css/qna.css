@@ -1,2 +1,144 @@
 @charset "uft-8";
 @import url('common.css');
+
+
+
+/* 헤더이미지 ///////////////////// */
+.bd_hd{
+    position: relative;
+    width:100%;
+    height:18vw;
+    overflow: hidden;
+    background-color: rgba(0,0,0);
+}
+.bd_hd figure{
+    background:url('../img/gl7.jpg') 50% 55% no-repeat;
+    width:100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+}
+.bd_hd span{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    font-size:36px;
+    color:white;
+    letter-spacing: 20px;
+    width: fit-content;
+}
+
+
+/* container ////////////////////////*/
+.container{
+    width:60%;
+    margin:100px auto;
+    padding:0;
+}
+
+.faq{
+    position: relative;
+    /* border:1px solid #777; */
+    padding:60px;
+    border-radius: 30px;
+    background:white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.faq h2{
+    font-weight: 900;
+    margin-bottom:30px;
+}
+.faq ul li h3{
+    font-style: italic;
+    line-height: 2;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight:500;
+    width:90%;
+}
+.faq ul li > div{
+    font-size: 16px;
+    line-height: 1.5;
+    padding:25px;
+    margin:10px;
+    border-radius: 20px;
+    background-color: rgb(240, 236, 231);
+    display:none;
+}
+.faq ul li > div.active{}
+.faq ul{
+    cursor:default;
+}
+.faq ul li{
+    position: relative;
+    padding:10px;
+    box-sizing: border-box;
+    border-top:1px solid rgb(201, 201, 201);
+}
+.faq ul li:last-child{
+    border-bottom:1px solid rgb(201, 201, 201);
+}
+.faq ul li > p{
+    display:none;
+    position: absolute;
+    right:20px; top:50%;
+    transform: translateY(-50%);
+}
+.faq ul li p.active{
+    display:block;
+}
+.qna{
+    position:absolute;
+    left:103%;
+    top:0;
+    width:fit-content;
+    padding:20px 30px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: black;
+    color:white;
+}
+.qna h3{
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom:10px;
+}
+.qna p{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+/* 반응형 모바일  ///////////////////////*/
+@media (min-width:360px) and (max-width:767px){
+
+    .container{
+        /* OK */
+        width:90%;
+        margin:50px auto;
+    }
+
+    .bd_hd span{
+        font-size:20px;
+    }
+
+    .faq h2{
+        font-size:24px;
+    }
+    .faq{
+        position: relative;
+        /* border:1px solid #777; */
+        padding:10px;
+        border-radius: 0px;
+        background:white;
+        box-shadow: 0 0 0px;
+    }
+    .qna{
+        display: none;
+    }
+    .faq ul li h3{
+        line-height: 1.5;
+    }
+
+}
