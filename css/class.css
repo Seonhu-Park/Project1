@@ -186,6 +186,41 @@
     border:1px solid #fdd000;
 }
 
+.form{
+    border:1px solid #a89968;
+    border-top:0px;
+    padding:50px 80px;
+    display:none;
+}
+.form.active{
+    display:block;
+}
+.form > div{
+    margin: 10px 0;
+}
+.form input{
+    width:200px; height:25px;
+    padding: 0 10px;
+    border:1px solid black;
+}
+
+.form .label{
+    margin: 50px 0 20px 0;
+    text-align: center;
+}
+#submit{
+    display:flex;
+    width:100px;
+    border:1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+#chk{
+    width:15px; height:15px;
+    margin-left:5px;
+}
+
 
 
 
@@ -378,6 +413,12 @@
         font-size:0px;
         font-weight: bold;
         border:0px solid #fdd000;
+    }
+    .form{
+        padding:20px;
+    }
+    .form div{
+        font-size:16px;
     }
 }
 

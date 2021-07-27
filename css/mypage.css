@@ -30,6 +30,7 @@
 
 /* 컨테이너 //////////////////////// */
 .container{
+    position: relative;
     margin:0 10%;
 }
 .con-1{
@@ -53,6 +54,7 @@
 }
 
 .con-2{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,6 +111,40 @@
 }
 .con-2 a:visited{
     color:#fdd000;
+}
+.login{
+    position:absolute;
+    left:50%; top:20%;
+    transform: translate(-50%,-50%);
+    border:1px solid black;
+    padding:60px 100px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0,0,0,0.9);
+    z-index:10;
+}
+.login h3{
+    margin-bottom:20px;
+    font-weight: 900;
+}
+.login.active{
+    display:none;
+}
+.login .input{
+    padding:10px;
+    width:250px;
+    margin-bottom:10px;
+    border:1px solid black;
+}
+.in{
+    padding: 10px 0;
+    margin-bottom: 10px;
+    width:60px;
+    border:1px solid black;
+}
+.go{
+    width:50px;
+    margin-left:5px;
 }
 
 

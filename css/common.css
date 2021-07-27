@@ -65,6 +65,7 @@ header{
     top:0;
     z-index: 10;
     overflow: hidden;
+    border-bottom:1px solid #fdd000;
 }
 header .hdmain{
     width:100%;

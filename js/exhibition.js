@@ -2,10 +2,6 @@ function init(){
 
     $('header').load('inc.html .hdmain',burger);
     $('footer').load('inc.html .end');
-
-
-
-
     function burger(){
         const elBurger = document.querySelector('.bgmenu1');
         const elNav = document.querySelector('.bgmenu2');
@@ -18,6 +14,7 @@ function init(){
             });
         }
     };
+
 
     fetch('data/data_exh.json')
     .then( res => res.json() )
@@ -43,8 +40,8 @@ function init(){
             </li>
             `;
     
-            elCon1.innerHTML = tagList;
         });
+        elCon1.innerHTML = tagList;
 
         data.work2.forEach(function(e,w){
             tagList2 += `
@@ -60,9 +57,8 @@ function init(){
             </a>
             </li>
             `;
-    
-            elCon2.innerHTML = tagList2;
         });
+        elCon2.innerHTML = tagList2;
     }
 
 }
