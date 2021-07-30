@@ -30,6 +30,19 @@ function init(){
             return false;
         })
     }
+    const cur = document.querySelector('.cursor');
+        window.addEventListener('mousemove',function(e){
+            const x = e.pageX;
+            const y = e.pageY;
+            // console.log(x,y);
+            cur.style =
+            `
+            left:${x}px;
+            top:${y}px;
+            display:inline-block;
+            transform:translate(-10%,-10%);
+            `;
+        })
 
 
     fetch('data/data_exh.json')
