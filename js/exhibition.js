@@ -1,7 +1,7 @@
 function init(){
 
     $('header').load('inc.html .hdmain',burger);
-    $('footer').load('inc.html .end');
+    $('footer').load('inc.html .end',top);
     function burger(){
         const elBurger = document.querySelector('.bgmenu1');
         const elNav = document.querySelector('.bgmenu2');
@@ -14,6 +14,22 @@ function init(){
             });
         }
     };
+    function top(){
+        const elTop = document.querySelector('.topbtn');
+        window.addEventListener('scroll',function(){
+            if(window.innerHeight < window.scrollY){
+                elTop.classList.add('active');
+            }else{
+                elTop.classList.remove('active');
+            }
+        })
+        $('.topbtn a').click(function(){
+            $('html,body').animate({
+                scrollTop : 0
+            },400);
+            return false;
+        })
+    }
 
 
     fetch('data/data_exh.json')

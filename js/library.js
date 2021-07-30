@@ -31,38 +31,17 @@ function init(){
         })
     }
 
-    function qna(){
-        $('.faq ul li').on('click',function(){
-            if( $(this).hasClass('active') ){
-                $(this).removeClass('active').find('div').stop().slideUp();
-                $(this).find('p').stop().fadeIn(1000);
-                return;
-            }
-            $(this).addClass('active').find('div').stop().slideDown();
-            $(this).find('p').stop().fadeOut(50);
+
+    const elShare = document.querySelectorAll('.share');
+    for(let i=0; i<elShare.length; i++){
+        elShare[i].addEventListener('click',function(){
+            shareFacebook();
         })
     }
-
-
-    fetch('data/data_qna.json')
-    .then( res => res.json() )
-    .then( data => callback(data) );
-
-    const elUl = document.querySelector('.faq ul');
-    let tagList = '';
-
-    function callback(data){
-        data.work.forEach(function(v,k){
-            tagList += `
-            <li>
-            <h3>${v.q}</h3>
-            <p class="active">></p>
-            <div>${v.a}</div>
-            </li>
-            `;
-            elUl.innerHTML = tagList;
-        })
-        qna();
+    
+    function shareFacebook() {
+        var sendUrl = location.href; // 전달할 URL
+        window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
     }
 
 
