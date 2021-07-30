@@ -56,11 +56,13 @@
 .con-2{
     
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .con-2 article{
-    width:25%;
+    width:23vw;
+    margin:0px 0px 30px 0px;
 }
 .con-2 img{
     vertical-align: top;

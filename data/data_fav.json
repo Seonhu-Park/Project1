@@ -1,0 +1,24 @@
+{
+    "work":[
+        {
+            "title":"디자인",
+            "thum":"img/book1.jpg",
+            "link":"http://mdesign.designhouse.co.kr/"
+        },
+        {
+            "title":"행복이가득한집",
+            "thum":"img/book2.jpg",
+            "link":"http://happy.designhouse.co.kr/"
+        },
+        {
+            "title":"StyleH",
+            "thum":"img/book3.jpg",
+            "link":"http://library.designhouse.co.kr/enfant/"
+        },
+        {
+            "title":"LUXURY",
+            "thum":"img/book4.jpg",
+            "link":"http://luxury.designhouse.co.kr/"
+        }
+    ]
+}
