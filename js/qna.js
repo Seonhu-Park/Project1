@@ -40,7 +40,7 @@ function init(){
             left:${x}px;
             top:${y}px;
             display:inline-block;
-            transform:translate(-10%,-10%);
+            transform:translate(10%,10%);
             `;
         })
 
